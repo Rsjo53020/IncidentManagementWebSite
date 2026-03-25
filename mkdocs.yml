@@ -1,24 +1,28 @@
-site_name: My Docs
-site_url: https://mydomain.org/mysite
+site_name: Incident Management
+site_description: Videnssite om incident management baseret på ISO, NIST og læringsmål for IT-hændelseshåndtering
+site_url: https://example.org/incident-management
+repo_name: Rsjo53020/IncidentManagementWebSite
+repo_url: https://github.com/Rsjo53020/IncidentManagementWebSite
+
 theme:
   name: material
-  palette: 
-
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  language: da
+  palette:
+  - scheme: default
+    primary: deep purple
+    accent: teal
+    toggle:
+      icon: material/brightness-7
+      name: Skift til mørk tilstand
+  - scheme: slate
+    primary: deep purple
+    accent: teal
+    toggle:
+      icon: material/brightness-4
+      name: Skift til lys tilstand
   features:
     - navigation.instant
     - navigation.instant.progress
-    - navigation.instant.preview
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
@@ -26,17 +30,23 @@ theme:
     - navigation.expand
     - navigation.top
     - toc.follow
-    - toc.integrate
     - search.highlight
     - search.share
     - search.suggest
     - content.code.copy
-    
+
 plugins:
   - search
   - blog
 
 markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -44,13 +54,34 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 nav:
-  - Home: index.md
-  - Code Documentation: 
-    - Java: Coding/upset.md
-  - Incident Management: 
-    - Procesflow: Incident Management/procesflow.md
-    - ISO/IEC 27035: Incident Management/iso.md
-  - Blog:
-    - blog/index.md
+  - Hjem: index.md
+  - Fundament:
+      - Formål og anvendelse: 01-Grundlag/formaal-og-anvendelse.md
+      - Centrale begreber: 01-Grundlag/centrale-begreber.md
+  - ISO og NIST:
+      - ISO og NIST i samspil: 02-Frameworks/iso-og-nist.md
+      - NIST CSF 2.0 og 800-61r3: 02-Frameworks/csf-og-800-61.md
+      - NIST 800-53 og relevante IR-kontroller: 02-Frameworks/800-53-kontroller.md
+      - Forensics og evidens: 02-Frameworks/forensics-og-evidens.md
+  - Proces og plan:
+      - Generisk incident management-plan: 03-Proces/generisk-plan.md
+      - Roller, ansvar og eskalation: 03-Proces/roller-og-ansvar.md
+      - Playbooks og arbejdsgange: 03-Proces/playbooks.md
+  - Operationel håndtering:
+      - Detektion, analyse og triage: 04-Operationel-håndtering/detektion-analyse-triage.md
+      - Inddæmning, eradikering og recovery: 04-Operationel-håndtering/inddaemning-eradikering-recovery.md
+      - Kommunikation og rapportering: 04-Operationel-håndtering/kommunikation-og-rapportering.md
+  - Læring og styring:
+      - Øvelser, metrics og modenhed: 05-Læring-og-governance/oevelser-metrics-modenhed.md
+      - Dokumentation og auditspor: 05-Læring-og-governance/dokumentation-og-auditspor.md
+  - Undervisning:
+      - Fagbeskrivelse og læringsmål: 06-Undervisning/laeringsmaal.md
+      - Studieaktiviteter og cases: 06-Undervisning/studieaktiviteter.md
+  - Kilder: kilder.md
