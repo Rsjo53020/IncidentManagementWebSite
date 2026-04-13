@@ -40,7 +40,6 @@ Den studerende kan:
 
 - håndtere afgrænsede hændelseshåndteringsopgaver i praksis
 - indgå i fagligt og tværfagligt samarbejde om håndtering og opfølgning på IT-sikkerhedshændelser
-- identificere egne læringsbehov og udvikle egen faglighed inden for incident management
 
 ## Didaktisk kobling til sitet
 

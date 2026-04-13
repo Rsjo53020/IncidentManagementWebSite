@@ -25,6 +25,7 @@ Træffer beslutninger ved høj impact, fx nedlukning, ekstern kommunikation elle
 Inddrages efter behov ved persondata, medarbejdersager, kontraktforhold eller mediehåndtering.
 
 ## Eksempel på RACI-lignende rollefordeling
+RACI (Responsible, Accountable, Consult, Inform)
 
 | Aktivitet | Incident Lead | Analyst | Driftsansvarlig | Systemejer | Ledelse |
 |---|---|---:|---:|---:|---:|
