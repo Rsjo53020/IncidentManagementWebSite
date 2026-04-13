@@ -4,7 +4,6 @@
 
 ### Repo og struktur
 - GitHub-repo: `Rsjo53020/IncidentManagementWebSite`
-- Eksisterende struktur med MkDocs og Markdown er videreført og udbygget.
 
 ### Uploaded projektfiler
 - `læringsmål - Hændelseshåndtering.docx`
@@ -32,4 +31,4 @@ Sitet bruger:
 
 ## Bemærkning
 
-Teksten er skrevet som et sammenhængende videnssite og ikke som direkte gengivelse af kilderne. Den er tilpasset undervisning, generisk planlægning og praktisk anvendelse i organisationer.
+Teksten er skrevet som et sammenhængende videnssite og ikke som direkte gengivelse af kilderne.
