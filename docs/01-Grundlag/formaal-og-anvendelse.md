@@ -8,53 +8,19 @@ Incident management er den disciplin, der operationaliserer denne resiliens.
 
 ## Hvad skal en generisk model kunne?
 
-En generisk incident management-model skal kunne anvendes på tværs af:
+En generisk incident management-model skal kunne anvendes bredt på tværs af forskellige organisatoriske og tekniske kontekster, herunder både små og store organisationer, offentlige såvel som private aktører, samt i on-prem, cloud og hybride miljøer. Modellen skal desuden kunne håndtere både tekniske, organisatoriske og kombinerede hændelser.
 
-- Organisationernes størrelse
-- Offentlige og private organisationer
-- On-prem, cloud og hybride miljøer
-- Tekniske, organisatoriske og kombinerede hændelser
-
-Derfor skal modellen være:
-
-- **styringsbar** – med roller, mandat og beslutningspunkter
-- **gentagelig** – med standardiserede arbejdsgange
-- **skalerbar** – fra mindre hændelser til større kriser
-- **dokumenterbar** – med sporbarhed, logning og rapportering
-- **forbedringsorienteret** – After Action Review - lessons learned og opfølgning
+For at imødekomme disse krav bør modellen være styringsbar med klart definerede roller, mandat og beslutningspunkter, så ansvarsfordelingen er entydig. Den skal samtidig være gentagelig gennem standardiserede arbejdsgange, hvilket sikrer konsistens i håndteringen af hændelser. Skalerbarhed er også central, så modellen kan tilpasses alt fra mindre driftsforstyrrelser til større krisesituationer. Derudover skal den være dokumenterbar med fokus på sporbarhed, logning og rapportering, hvilket understøtter både compliance og læring. Endelig bør modellen være forbedringsorienteret ved systematisk at inddrage After Action Reviews, opsamle erfaringer og sikre opfølgning, så organisationen løbende kan styrke sin incident management-praksis.
 
 ## Hvad er omfattet?
 
-På dette site bruges incident management som paraply for:
+På dette site anvendes incident management som en samlet paraplybetegnelse, der dækker hele livscyklussen for håndtering af hændelser. Det omfatter både den indledende registrering af hændelser og observationer samt efterfølgende klassifikation og prioritering, så indsatsen kan målrettes korrekt. Derudover indgår analyse og undersøgelse med henblik på at forstå årsager og konsekvenser, efterfulgt af inddæmning og afhjælpning for at begrænse skader og genoprette driften.
 
-- Registrering af hændelser og observationer
-- Klassifikation og prioritering
-- Analyse og undersøgelse
-- Inddæmning og afhjælpning
-- Recovery og validering
-- Intern og ekstern kommunikation
-- Dokumentation, forensics og bevisbevarelse
-- Læring, øvelser og modenhedsudvikling
+Processen fortsætter med recovery og validering, hvor systemer bringes tilbage til normal tilstand, og det sikres, at løsningerne virker som forventet. Samtidig er både intern og ekstern kommunikation en integreret del af håndteringen, ligesom dokumentation, forensics og bevisbevarelse understøtter sporbarhed og eventuel efterforskning. Endelig omfatter incident management også læring, øvelser og modenhedsudvikling, så organisationen løbende kan forbedre sin evne til at håndtere fremtidige hændelser.
 
-## Hvad er ikke nok alene?
-
-Et SIEM, et ticket-system eller en SOC-funktion er ikke i sig selv incident management.
-
-De er **kapabiliteter og værktøjer**, som skal understøttes af:
-
-- De fire P'er - Policy, Plan & Playbooks
-- Ansvarsmatricer
-- Træning
-- Udførelser / Øvelser
-- Milepæle / Målepunkter
 
 ## Praktisk tommelfingerregel
 
-En organisation har først en reel incident management-kapabilitet, når den kan svare klart på følgende:
+En praktisk tommelfingerregel er, at en organisation først har en reel incident management-kapabilitet, når den entydigt kan besvare en række centrale spørgsmål. Det gælder blandt andet, hvem der har mandat til at erklære en hændelse som et incident, og hvem der ejer beslutningerne i forhold til containment og recovery. Der skal også være klarhed over, hvilke logkilder og beviser der skal bevares for at sikre korrekt dokumentation og eventuel efterfølgende analyse.
 
-1. Hvem må erklære en hændelse som incident?  
-2. Hvem ejer beslutninger om containment og recovery?  
-3. Hvilke logkilder og beviser skal bevares?  
-4. Hvornår skal ledelse, jura, HR eller kommunikation involveres?  
-5. Hvordan dokumenteres hændelsen fra start til lukning?  
-6. Hvordan sikres forbedringer bagefter?  
+Derudover skal organisationen have fastlagte kriterier for, hvornår funktioner som ledelse, jura, HR eller kommunikation skal involveres i håndteringen. Det er ligeledes afgørende, at der findes en struktureret tilgang til dokumentation af hændelsen fra start til lukning. Endelig skal organisationen kunne redegøre for, hvordan læring omsættes til konkrete forbedringer efterfølgende, så kapabiliteten løbende styrkes.

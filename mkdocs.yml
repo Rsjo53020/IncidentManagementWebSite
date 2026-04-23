@@ -1,25 +1,50 @@
 site_name: Incident Management
-site_description: Videnssite om incident management baseret på ISO, NIST og læringsmål for IT-hændelseshåndtering
+site_description: Professionelt videnssite om incident management baseret på ISO, NIST og læringsmål for IT-hændelseshåndtering
 site_url: https://example.org/incident-management
 repo_name: Rsjo53020/IncidentManagementWebSite
 repo_url: https://github.com/Rsjo53020/IncidentManagementWebSite
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Rsjo53020/IncidentManagementWebSite
+  homepage: index.md
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript: []
+docs_dir: docs
+
 theme:
   name: material
   language: da
+  logo: assets/shield.svg
+  favicon: /assets/shield.svg
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      note: octicons/info-16
+      tip: octicons/light-bulb-16
+      warning: octicons/alert-16
+      danger: octicons/zap-16
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
-  - scheme: default
-    primary: deep purple
-    accent: teal
-    toggle:
-      icon: material/brightness-7
-      name: Skift til mørk tilstand
-  - scheme: slate
-    primary: deep purple
-    accent: teal
-    toggle:
-      icon: material/brightness-4
-      name: Skift til lys tilstand
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Skift til mørk tilstand
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Skift til lys tilstand
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -29,11 +54,16 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.footer
     - toc.follow
     - search.highlight
     - search.share
     - search.suggest
     - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+    - content.tooltips
+    - announce.dismiss
 
 plugins:
   - search
@@ -42,6 +72,7 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - def_list
   - footnotes
   - tables
@@ -59,17 +90,30 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.caret
 
 nav:
   - Hjem: index.md
+  - Generelt: 
+      - Projekt planlægning og refleksion: 01-Grundlag/projektplan.md
+      - Projektets milepæle: projektetsmilepæle.md
   - Fundament:
       - Formål og anvendelse: 01-Grundlag/formaal-og-anvendelse.md
       - Centrale begreber: 01-Grundlag/centrale-begreber.md
-  - ISO og NIST:
+  - Standarder og frameworks:
       - ISO og NIST i samspil: 02-Frameworks/iso-og-nist.md
-      - NIST CSF 2.0 og 800-61r3: 02-Frameworks/csf-og-800-61.md
-      - NIST 800-53 og relevante IR-kontroller: 02-Frameworks/800-53-kontroller.md
-      - Forensics og evidens: 02-Frameworks/forensics-og-evidens.md
+      - NIST CSF 2.0: 02-Frameworks/csf20.md 
+      - NIST 800-53: 02-Frameworks/nist800-53.md
+      - NIST 800-61: 02-Frameworks/nist800-61.md
+      - NIST 800-86: 02-Frameworks/nist800-86.md
+      - ISO 22320: 02-Frameworks/iso22320.md
+      - ISO 27035 Del 1: 02-Frameworks/iso27035-1.md
+      - ISO 27035 Del 2: 02-Frameworks/iso27035-2.md
+      - ISO 27035 Del 3: 02-Frameworks/iso27035-3.md
+      - ISO 27035 Del 4: 02-Frameworks/iso27035-4.md
   - Proces og plan:
       - Generisk incident management-plan: 03-Proces/generisk-plan.md
       - Roller, ansvar og eskalation: 03-Proces/roller-og-ansvar.md

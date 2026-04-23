@@ -1,66 +1,136 @@
 # Centrale begreber
 
-## Event, alert og incident
+## Event, Alert og Incident
 
-Det er afgørende at skelne mellem de centrale begreber:
+En præcis begrebsafklaring er fundamental for effektiv hændelseshåndtering. Uden et fælles sprog opstår der hurtigt fejlklassifikation, forkert prioritering og ineffektiv respons.
 
-### Event
-En observerbar hændelse i systemer, netværk, services eller processer. Et event er ikke nødvendigvis skadeligt.
+### Event  
+En **observerbar hændelse** i systemer, netværk eller processer.  
+Et event er neutralt og indikerer ikke nødvendigvis en sikkerhedstrussel.
 
-### Alert
-Et event eller en sammenstilling af events, der giver anledning til mistanke. Alerts udløses ofte af overvågning, regler, korrelation eller brugerhenvendelser.
+> Eksempel: Login, systemændring eller netværkstrafik
 
-### Incident
-En hændelse, der faktisk eller med høj sandsynlighed kompromitterer fortrolighed, integritet eller tilgængelighed, eller truer forretningsdrift, data eller efterlevelse.
+---
 
-## Severity, impact og priority
+### Alert  
+Et **indikatorbaseret signal**, der indikerer potentiel unormal eller mistænkelig aktivitet.  
+Alerts genereres typisk via overvågningsværktøjer (SIEM, EDR) eller korrelationsregler.
 
-Disse tre forveksles ofte:
+> Alerts kræver altid validering – de er hypoteser, ikke fakta
 
-- **Severity**: hvor alvorlig hændelsen er teknisk eller sikkerhedsmæssigt
-- **Impact**: hvilken forretningsmæssig konsekvens hændelsen har
-- **Priority**: hvor hurtigt og med hvilke ressourcer hændelsen skal håndteres
+---
+
+### Incident  
+En **bekræftet eller højt sandsynlig sikkerhedshændelse**, der kompromitterer eller truer:
+
+- Fortrolighed (Confidentiality)  
+- Integritet (Integrity)  
+- Tilgængelighed (Availability)  
+
+> Incident = når risiko bliver til reel påvirkning eller konkret trussel
+
+---
+
+## Severity, Impact og Priority
+
+Disse tre dimensioner er centrale i styring og beslutningstagning – og bliver ofte fejlagtigt blandet sammen.
+
+| Begreb     | Fokus                     | Spørgsmål det besvarer |
+|------------|--------------------------|------------------------|
+| **Severity** | Teknisk alvor            | Hvor slemt er det teknisk/sikkerhedsmæssigt? |
+| **Impact**   | Forretningspåvirkning    | Hvad betyder det for forretningen? |
+| **Priority** | Respons og handling      | Hvor hurtigt skal vi reagere – og med hvilke ressourcer? |
+
+> **Vigtigt:** Priority er en funktion af *både* severity og impact – ikke en selvstændig vurdering.
+
+---
 
 ## Triage
 
-Triage er den indledende vurdering, hvor man afgør:
+Triage er den **første analytiske beslutningsfase** i incident response-processen.
 
-- om noget er et incident
-- hvilken type incident der er tale om
-- hvor kritisk det er
-- hvem der skal involveres
-- hvilke første handlinger der skal udføres
+Formålet er at skabe hurtig klarhed og sikre korrekt håndtering fra start.
 
-## Containment, eradication og recovery
+### Triage omfatter:
 
-### Containment
-Tiltag der begrænser skade og spredning, fx netværksisolering, kontolåsning eller blokering af indikatorer.
+- Klassifikation: *Er dette et incident eller ej?*  
+- Kategorisering: *Hvilken type hændelse er det?*  
+- Kritikalitet: *Hvor alvorligt er det?*  
+- Eskalation: *Hvem skal involveres?*  
+- Initial respons: *Hvilke handlinger skal iværksættes nu?*  
 
-### Eradication
-Fjernelse af den bagvedliggende årsag, fx malware, persistence, kompromitterede konti eller sårbare konfigurationer.
+> Effektiv triage reducerer responstid og begrænser skade markant
 
-### Recovery
-Sikker genetablering af drift og tillid til miljøet, inklusive validering af at kompromitteringen ikke fortsætter.
+---
 
-## Lessons learned
+## Containment, Eradication og Recovery
 
-Lessons learned er ikke blot et afsluttende møde. Det er en struktureret læringsproces, som skal forbedre:
+Disse tre faser udgør kernen i den operationelle håndtering.
 
-- teknologi
-- processer
-- ansvar og samspil
-- træning
-- playbooks
-- kontrolmiljø
+### Containment  
+**Begrænsning af skade og spredning**
 
-## Evidens og chain of custody
+Typiske tiltag:
+- Isolering af systemer  
+- Blokering af IP’er/domæner  
+- Deaktivering af konti  
 
-Når data kan få juridisk, disciplinær eller revisionsmæssig betydning, skal organisationen kunne dokumentere:
+---
 
-- hvem der indsamlede data
-- hvornår data blev indsamlet
-- hvordan data blev sikret mod ændring
-- hvor data blev opbevaret
-- hvem der har haft adgang
+### Eradication  
+**Fjernelse af root cause**
 
-Dette er centralt ved forensics og alvorlige hændelser.
+Typiske tiltag:
+- Fjernelse af malware  
+- Lukning af sårbarheder  
+- Fjernelse af persistence mechanisms  
+
+---
+
+### Recovery  
+**Sikker genetablering af drift**
+
+Omfatter:
+- Gendannelse af systemer  
+- Validering af integritet  
+- Overvågning for reinfektion  
+
+> Recovery handler ikke kun om drift – men om **tillid til miljøet**
+
+---
+
+## Lessons Learned
+
+Lessons learned er en **kontinuerlig forbedringsmekanisme**, ikke blot en afsluttende aktivitet.
+
+Formålet er at styrke organisationens samlede sikkerhedsniveau.
+
+### Fokusområder:
+
+- Teknologi (detektion, logs, tooling)  
+- Processer (playbooks, workflows)  
+- Organisation (roller, ansvar, samarbejde)  
+- Kompetencer (træning og awareness)  
+- Governance (kontroller og compliance)
+
+> Understøtter en moden risk management tilgang (NIST SP 800-53)
+
+---
+
+## Evidens og Chain of Custody
+
+Ved alvorlige hændelser er korrekt håndtering af evidens afgørende – særligt ved:
+
+- Juridiske sager  
+- Interne disciplinærsager  
+- Revision og compliance  
+
+### Chain of Custody sikrer dokumentation for:
+
+- Hvem der indsamlede data  
+- Hvornår det blev gjort  
+- Hvordan integriteten er sikret  
+- Hvor data er opbevaret  
+- Hvem der har haft adgang  
+
+> Uden korrekt chain of custody kan evidens miste sin værdi
