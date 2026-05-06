@@ -1,0 +1,148 @@
+.table-wrap {
+  overflow-x: auto;
+  margin: 20px 0 28px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  background: #fff;
+}
+
+.table-wrap thead tr {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.table-wrap th {
+  padding: 11px 14px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.table-wrap tbody tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+.table-wrap tbody tr:hover {
+  background: #e8f0fe;
+}
+
+.table-wrap td {
+  padding: 10px 14px;
+  color: #334155;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+.diagram-intro {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.diagram-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.diagram-wrapper svg {
+  width: 100%;
+  height: auto;
+}
+
+svg .node-box {
+  cursor: pointer;
+}
+
+svg .node-box rect {
+  transition: filter 0.15s;
+}
+
+svg .node-box:hover rect,
+svg .node-box:focus rect {
+  filter: brightness(0.93);
+}
+
+figcaption {
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+#modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-overlay.active {
+  display: flex;
+}
+
+#modal {
+  background: #fff;
+  border-radius: 14px;
+  padding: 36px 40px;
+  max-width: 600px;
+  width: 92%;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.18);
+  position: relative;
+  animation: pop 0.18s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+#modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #94a3b8;
+}
+
+#modal-close:hover {
+  color: #334155;
+}
+
+#modal-layer {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+#modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+#modal-body p,
+#modal-body ul {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+#modal-body ul {
+  padding-left: 20px;
+}

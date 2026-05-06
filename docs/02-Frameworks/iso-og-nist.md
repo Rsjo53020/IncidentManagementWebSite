@@ -1,87 +1,23 @@
 # ISO og NIST i samspil
 
-## Hvorfor bruge begge?
+ISO og NIST supplerer hinanden i incident management ved at kombinere struktur, governance, kontroller og operativ praksis i én samlet tilgang. Hvor ISO etablerer en systematisk og standardiseret proces for håndtering af hændelser, bidrager NIST med en mere fleksibel og risikobaseret operationalisering, der kobler incident management til organisationens samlede cybersikkerheds- og styringsramme. Samtidig udvider ISO 22320 perspektivet ved at løfte håndteringen fra et rent teknisk niveau til et organisatorisk og ledelsesmæssigt niveau, hvor koordinering og kriseledelse bliver centrale elementer. Incident management bør derfor forstås som en tværgående kapabilitet, der involverer både teknik, ledelse og forretning.
 
-ISO og NIST supplerer hinanden stærkt i incident management, fordi de adresserer forskellige lag:
-
-- **ISO/IEC 27035-serien** giver en internationalt anerkendt og struktureret proces for hændelseshåndtering.
-- **ISO 22320** udvider perspektivet til kriseledelse og tværorganisatorisk koordinering.
-- **NIST CSF 2.0** placerer incident response i en bredere risikostyrings- og governancekontekst.
-- **NIST SP 800-61r3** omsætter CSF til konkrete, operationelle anbefalinger.
-- **NIST SP 800-53** giver et omfattende kontrolkatalog til implementering af sikkerhed og governance.
-- **NIST SP 800-86** tilfører et nødvendigt forensics-perspektiv.
-
->Sammen giver de både **proces, styring, kontrol og operativ praksis**.
+I nedenstående figur, som illustrerer, hvordan de forskellige frameworks kan understøtter hinanden på tværs af governance, proces, operationel håndtering og kriseledelse.
 
 ---
 
-## ISO-standarder i dybden
+<figure style="text-align: center;">
+  <img src="../assets/Arkitekturdiagram.png" style="max-width: 600px; width: 100%;">
+  <figcaption><em>Figur 1: Et muligt samspil mellem NIST & ISO til incident management. Konstrueret i draw.io.</em></figcaption>
+</figure>
 
-### ISO/IEC 27035-serien (Incident Management)
 
-ISO/IEC 27035 er ikke én standard, men en serie, der tilsammen dækker hele disciplinen:
+Figuren synliggøre, hvordan NIST CSF 2.0 danner det overordnede styringslag, hvor incident management forankres i organisationens risikostyring. ISO/IEC 27035 fungerer som den centrale styrmand, der strukturerer hele livscyklussen for hændelseshåndtering fra planlægning og forberedelse til læring og forbedring. NIST SP 800-61 bygger ovenpå denne proces ved at operationalisere den gennem konkrete anbefalinger til håndtering af incidents, mens NIST SP 800-53 understøtter implementeringen gennem specifikke sikkerhedskontroller. NIST SP 800-86 tilfører et specialiseret perspektiv på forensics og evidenshåndtering, hvilket er afgørende for analyse, dokumentation og læring. Parallelt med dette bidrager ISO 22320 med et tværgående lag, der sikrer, at håndteringen kan skaleres til komplekse hændelser, hvor koordinering, kommunikation og ledelse på tværs af organisationer er nødvendigt.
 
-- **ISO/IEC 27035-1**  
-  Overordnet ramme og principper for incident management  
-  → Definerer governance, begreber og livscyklus
+ISO/IEC 27035-serien udgør dermed fundamentet for den procesmæssige tilgang til incident management og beskriver en sammenhængende livscyklus bestående af planlægning og forberedelse, detektion og rapportering, vurdering og beslutningstagning, respons samt efterfølgende læring. Denne struktur sikrer en systematisk og reproducerbar tilgang, hvor organisationen kan håndtere hændelser konsistent og samtidig forbedre sine kapabiliteter over tid. ISO 22320 supplerer denne tilgang ved at fokusere på den organisatoriske ramme omkring hændelsen, herunder etablering af en entydig kommandostruktur, effektiv informationsdeling og udvikling af en fælles situationsforståelse, hvilket er særligt relevant i større eller mere komplekse scenarier.
 
-- **ISO/IEC 27035-2**  
-  Retningslinjer for planlægning og implementering  
-  → Fokus på etablering af capability og processer
+NIST tilfører yderligere værdi ved at koble incident management til en bredere kontekst af risikostyring og governance gennem CSF 2.0, hvor funktionerne Govern, Identify, Protect, Detect, Respond og Recover sikrer en helhedsorienteret tilgang til cybersikkerhed. Samtidig muliggør NIST en konkret operationalisering gennem både procesbeskrivelser og kontroller, hvilket gør det lettere at omsætte strategiske mål til praktisk handling. Dette skaber en stærk kobling mellem organisationens sikkerhedsstrategi og den daglige drift, hvor incident response ikke blot bliver en reaktiv disciplin, men en integreret del af den samlede sikkerhedsarkitektur.
 
-- **ISO/IEC 27035-3**  
-  Retningslinjer for incident response operationer  
-  → Fokus på det operative arbejde (triage, analyse, response)
+Når ISO og NIST anvendes i samspil, opnår organisationen en robust og skalerbar tilgang til incident management, hvor der etableres en klar struktur for processer, roller og ansvar, samtidig med at der sikres fleksibilitet i implementeringen. Kombinationen understøtter både compliance og audit, styrker koordineringen på tværs af organisationen og skaber en tæt sammenhæng mellem tekniske aktiviteter og forretningsmæssige behov. Yderligere giver den et solidt fundament for løbende læring og forbedring, hvilket er afgørende i et trusselslandskab, der konstant udvikler sig.
 
-- **ISO/IEC 27035-4**  
-  Retningslinjer for koordinering af incidents  
-  → Fokus på samarbejde mellem organisationer og sektorer
-
-> Samlet set går 27035-serien fra **strategi → implementering → drift → koordinering**
-
----
-
-### ISO 22320 (Emergency Management)
-
-ISO 22320 udvider incident management til et mere overordnet niveau med fokus på krisestyring og beredskabsledelse. Standarden introducerer strukturer, der understøtter effektiv beslutningstagning, koordineret kommunikation og etablering af fælles situationsforståelse på tværs af organisationen.
-
-Denne tilgang gør det muligt at håndtere komplekse og omfattende hændelser såsom større cyberangreb, samfundskritiske hændelser og tværorganisatoriske kriser, hvor flere aktører er involveret. Hvor ISO 27035 primært fokuserer på selve håndteringen af incidentet, adresserer ISO 22320 den bredere krisehåndtering omkring incidentet og sikrer en samlet ledelsesmæssig indsats.
-
----
-
-## ISO/IEC 27035 som procesramme
-
-SO/IEC 27035 fungerer som en procesramme for incident management og beskriver håndteringen i en række sammenhængende faser. Disse omfatter planlægning og forberedelse (plan and prepare), efterfulgt af detektion og rapportering af hændelser (detection and reporting). Herefter foretages en vurdering og beslutningstagning (assessment and decision), som danner grundlag for de konkrete responsaktiviteter (responses). Afslutningsvis indgår en fase for læring og forbedring (lessons learned).
-
-Denne faseopdelte struktur er særligt velegnet for organisationer, der ønsker at etablere og beskrive en sammenhængende end-to-end proces for incident management, hvor der er klar progression fra forberedelse til opfølgning.
-
----
-
-## NIST som operativ udbygning
-
-NIST bidrager til incident management med tre centrale styrker, der tilsammen understøtter både strategisk forankring og praktisk eksekvering. For det første kobler CSF 2.0-perspektivet incident management direkte til de overordnede domæner Governance, Identify, Protect, Detect, Respond og Recover. Denne kobling sikrer, at håndtering af hændelser ikke står isoleret, men indgår som en integreret del af organisationens samlede cybersikkerheds- og risikostyringsramme.
-
-For det andet muliggør NIST en konkret operationalisering gennem NIST SP 800-53, hvor krav omsættes til specifikke kontroller som IR-4 (Incident Handling), IR-5 (Incident Monitoring), IR-6 (Incident Reporting) og IR-8 (Incident Response Plan). Disse kontroller fungerer som et praktisk værktøj, der understøtter både risikostyring og compliance ved at gøre krav håndgribelige og implementerbare i organisationens daglige drift.
-
-Endelig styrker NIST SP 800-86 arbejdet med forensics og evidenshåndtering ved at tydeliggøre, hvordan beviser indsamles, data bevares korrekt, og analyser gennemføres struktureret. Dette er afgørende for at sikre juridisk holdbarhed, muliggøre præcis root cause analysis og understøtte læring efter hændelser, så organisationen kan forbedre sin samlede sikkerhedskapabilitet.
-
----
-
-## Mine praktisk anbefaling
-
-- **ISO/IEC 27035-1 til 27035-4** → samlet procesramme (strategi → drift → koordinering)  
-- **ISO 22320** → kriseledelse og større hændelser  
-- **NIST CSF 2.0** → styring og modenhed  
-- **NIST SP 800-61r3** → operativ incident response  
-- **NIST SP 800-53** → kontrolkrav og governance  
-- **NIST SP 800-86** → forensics og evidenshåndtering  
-
----
-
-## Resultat i praksis
-
-I praksis betyder det, at når disse tilgange anvendes i samspil, opnår organisationen en robust og skalerbar proces for håndtering af hændelser. Samtidig etableres et klart og fælles sprog for roller og ansvar, hvilket styrker koordineringen på tværs af funktioner. Kombinationen skaber også en stærk kobling mellem tekniske aktiviteter og forretningsmæssige behov, så indsatsen bliver både relevant og værdiskabende.
-
-Derudover får organisationen en systematisk metode til prioritering af kontroller, hvilket understøtter en mere målrettet risikostyring. Samlet set giver det et solidt grundlag for audit og compliance, hvor krav kan dokumenteres og efterleves konsistent. Yderligere bidrager det til et stærkere fundament for undervisning, træning og kompetenceudvikling, så organisationens kapabiliteter løbende kan modnes og forbedres.
-
-> Kort sagt: **ISO skaber struktur – NIST gør det operationelt – ISO 22320 løfter det til kriseniveau**
+Samlet set bør ISO og NIST ikke betragtes som alternative tilgange, men som komplementære elementer i en moden incident management praksis. ISO skaber struktur og proces, NIST understøtter operationalisering og risikostyring, mens ISO 22320 sikrer, at håndteringen kan løftes til et organisatorisk og strategisk niveau ved komplekse hændelser. Tilsammen danner de en helhedsorienteret tilgang, der spænder fra governance til operativ håndtering og organisatorisk robusthed.

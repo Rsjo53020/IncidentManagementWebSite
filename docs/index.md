@@ -59,7 +59,7 @@ Denne del er vigtig, fordi den viser, at incident management ikke bør forstås 
 
 ### Den generiske proces for hændelseshåndtering
 
-En anden central sektion på hjemmesiden er beskrivelsen af den generiske incident management-proces. Her gennemgås typisk faser som:
+En anden central sektion på hjemmesiden er beskrivelsen af den generiske incident management-proces. Den er opdelt i 3 faser - FØR, UNDER og Efter. Hvert fase indeholder under emner. Herunder gennemgås nogle af emnerne, der hører til de faserne:
 
 - Forberedelse
 - Identifikation

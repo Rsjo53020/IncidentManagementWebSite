@@ -45,7 +45,6 @@ Det er væsentligt at understrege, at Tiers ikke er et mål i sig selv, men et k
 Et centralt element, der ofte overses, er det tilhørende online ressourcebibliotek, som NIST løbende opdaterer med Implementation Examples og Informative References. Disse ressourcer er netop designet til at omsætte de abstrakte outcomes til konkrete handlinger og peger på relevante standarder, retningslinjer og kontroller. Frameworket er således ikke blot strategisk, men understøttes aktivt af et operationelt lag (NIST, 2024, s. 9).
 
 
-
 ### Egen refleksion over NIST CSF 2.0
 
 NIST Cybersecurity Framework (CSF) 2.0 repræsenterer en moden og velovervejet tilgang til styring af cybersikkerhedsrisici på strategisk og organisatorisk niveau. Frameworkets outcome design giver organisationer betydelig fleksibilitet til at tilpasse implementeringen til deres specifikke kontekst, risikoprofil og forretningsmål, hvilket er en styrke, der gør CSF anvendeligt på tværs af sektorer, størrelser og modenhedsniveauer. Den mest markante i CSF 2.0 er Govern, der eksplicit forankrer cybersikkerhed i organisatorisk governance og strategisk ledelse. Dette er ikke blot en teknisk disciplin, men en integreret del af enterprise risk management og bestyrelsesniveauets ansvar. I en tid hvor regulatoriske krav som NIS2 og DORA netop stiller krav til ledelsesansvar for cybersikkerhed, er denne del meget relevant.
