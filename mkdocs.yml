@@ -101,8 +101,8 @@ nav:
   - Hjem:
       - Startside: index.md
       - Introduktion og læseguide: 00-Home/reading_strategy.md
+      - Læringsmål for IT-hændelseshåndtering: 00-Home/educational_goals.md
   - Projektet generelt:
-      
       - Indledende grov projektplanlægning: 01-InGeneral/project_plan.md
       - Faktisk projektplan: 01-InGeneral/actual_project_plan.md
       - Projektets milepæle: 01-InGeneral/project_milestones.md
@@ -114,19 +114,18 @@ nav:
       - ISO og NIST i samspil: 03-Frameworks/iso_and_nist.md
       - NIST CSF 2.0: 03-Frameworks/csf20.md
       - ISO 22320: 03-Frameworks/iso22320.md
+  - Generisk incident management-plan:
+      - instruktion til den generiske incident management plan: 04-GenericPlan/process.md
+      - Generisk incident management-plan: 04-GenericPlan/generic_plan.md
+      - Tjekliste for incident management-plan: 04-GenericPlan/checklist.md
   - Proces og plan:
-      - instruktion til den generiske incident management plan: 04-Proces/process.md
-      - Generisk incident management-plan: 04-Proces/generic_plan.md
-      - Roller, ansvar og eskalation: 04-Proces/roles_and_responsibilities.md
-      - Playbooks og arbejdsgange: 04-Proces/playbooks.md
+      - FØR Styringsgrundlag og governance: 05-Proces/governance.md
+      - FØR forberedelsesfase: 05-Proces/preparation.md
   - Operationel håndtering:
-      - Detektion, analyse og triage: 05-OperationalManagement/detection_analysis_triage.md
-      - Inddæmning, eradikering og recovery: 05-OperationalManagement/containmente_radication_recovery.md
-      - Kommunikation og rapportering: 05-OperationalManagement/communication_and_reporting.md
+      - UNDER detektions- og registreringsfase: 06-OperationalManagement/detect_report.md
+      - UNDER triage- og vurderingsfase: 06-OperationalManagement/triage_assessment.md
+      - UNDER analyse- og responsfase: 06-OperationalManagement/analysis_response.md
   - Læring og styring:
-      - Øvelser, metrics og modenhed: 06-LearningAndGovernance/exercises_metrics_maturity.md
-      - Dokumentation og auditspor: 06-LearningAndGovernance/documentation_and_audittrail.md
-  - Undervisning:
-      - Fagbeskrivelse og læringsmål: 07-Education/educational_goals.md
-      - Studieaktiviteter og cases: 07-Education/academic_activities.md
+      - EFTER recover fase: 07-LearningAndGovernance/recover.md
+      - EFTER læring og forbedring: 07-LearningAndGovernance/lessons_learned.md
   - Kilder: 00-Home/sources.md
