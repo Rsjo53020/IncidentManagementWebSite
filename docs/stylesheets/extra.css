@@ -104,3 +104,22 @@
   overflow: hidden;
   box-shadow: var(--im-shadow);
 }
+
+.md-grid {
+  max-width: none;
+}
+
+.md-main__inner {
+  max-width: none;
+}
+
+.md-content {
+  max-width: none;
+}
+
+.md-content__inner {
+  max-width: none;
+  margin: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}

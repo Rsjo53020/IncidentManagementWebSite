@@ -98,30 +98,35 @@ markdown_extensions:
   - pymdownx.caret
 
 nav:
-  - Hjem: index.md
-  - Generelt: 
-      - Projekt planlægning og refleksion: 01-Grundlag/projektplan.md
-      - Projektets milepæle: projektetsmilepæle.md
+  - Hjem:
+      - Startside: index.md
+      - Introduktion og læseguide: 00-Home/reading_strategy.md
+  - Projektet generelt:
+      
+      - Indledende grov projektplanlægning: 01-InGeneral/project_plan.md
+      - Faktisk projektplan: 01-InGeneral/actual_project_plan.md
+      - Projektets milepæle: 01-InGeneral/project_milestones.md
+      - Refleksioner over projektforløbet: 01-InGeneral/learning_and_experiences.md
   - Fundament:
-      - Formål og anvendelse: 01-Grundlag/formaal-og-anvendelse.md
-      - Centrale begreber: 01-Grundlag/centrale-begreber.md
+      - Formål og anvendelse: 02-Foundation/purpose_and_use.md
+      - Centrale begreber og definitioner: 02-Foundation/key_concepts.md
   - Standarder og frameworks:
-      - ISO og NIST i samspil: 02-Frameworks/iso-og-nist.md
-      - NIST CSF 2.0: 02-Frameworks/csf20.md 
-      - ISO 22320: 02-Frameworks/iso22320.md
+      - ISO og NIST i samspil: 03-Frameworks/iso_and_nist.md
+      - NIST CSF 2.0: 03-Frameworks/csf20.md
+      - ISO 22320: 03-Frameworks/iso22320.md
   - Proces og plan:
-      - instruktion til den generiske incident management plan: 03-Proces/instruktion.md
-      - Generisk incident management-plan: 03-Proces/generisk-plan.md
-      - Roller, ansvar og eskalation: 03-Proces/roller-og-ansvar.md
-      - Playbooks og arbejdsgange: 03-Proces/playbooks.md
+      - instruktion til den generiske incident management plan: 04-Proces/process.md
+      - Generisk incident management-plan: 04-Proces/generic_plan.md
+      - Roller, ansvar og eskalation: 04-Proces/roles_and_responsibilities.md
+      - Playbooks og arbejdsgange: 04-Proces/playbooks.md
   - Operationel håndtering:
-      - Detektion, analyse og triage: 04-Operationel-håndtering/detektion-analyse-triage.md
-      - Inddæmning, eradikering og recovery: 04-Operationel-håndtering/inddaemning-eradikering-recovery.md
-      - Kommunikation og rapportering: 04-Operationel-håndtering/kommunikation-og-rapportering.md
+      - Detektion, analyse og triage: 05-OperationalManagement/detection_analysis_triage.md
+      - Inddæmning, eradikering og recovery: 05-OperationalManagement/containmente_radication_recovery.md
+      - Kommunikation og rapportering: 05-OperationalManagement/communication_and_reporting.md
   - Læring og styring:
-      - Øvelser, metrics og modenhed: 05-Læring-og-governance/oevelser-metrics-modenhed.md
-      - Dokumentation og auditspor: 05-Læring-og-governance/dokumentation-og-auditspor.md
+      - Øvelser, metrics og modenhed: 06-LearningAndGovernance/exercises_metrics_maturity.md
+      - Dokumentation og auditspor: 06-LearningAndGovernance/documentation_and_audittrail.md
   - Undervisning:
-      - Fagbeskrivelse og læringsmål: 06-Undervisning/laeringsmaal.md
-      - Studieaktiviteter og cases: 06-Undervisning/studieaktiviteter.md
-  - Kilder: kilder.md
+      - Fagbeskrivelse og læringsmål: 07-Education/educational_goals.md
+      - Studieaktiviteter og cases: 07-Education/academic_activities.md
+  - Kilder: 00-Home/sources.md

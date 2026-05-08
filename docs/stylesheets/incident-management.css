@@ -46,13 +46,15 @@
 
 .diagram-wrapper {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
 }
 
 .diagram-wrapper svg {
   width: 100%;
+  max-width: none;
   height: auto;
+  display: block;
 }
 
 svg .node-box {
@@ -84,6 +86,8 @@ figcaption {
   z-index: 2000;
   align-items: center;
   justify-content: center;
+  padding: 24px;
+  overflow-y: auto;
 }
 
 #modal-overlay.active {
@@ -94,8 +98,10 @@ figcaption {
   background: #fff;
   border-radius: 14px;
   padding: 36px 40px;
-  max-width: 600px;
+  max-width: 760px;
   width: 92%;
+  max-height: 85vh;
+  overflow-y: auto;
   box-shadow: 0 12px 48px rgba(0,0,0,0.18);
   position: relative;
   animation: pop 0.18s ease;
@@ -137,7 +143,8 @@ figcaption {
 }
 
 #modal-body p,
-#modal-body ul {
+#modal-body ul,
+#modal-body li {
   font-size: 14px;
   line-height: 1.7;
   color: #334155;
