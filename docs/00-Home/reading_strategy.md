@@ -9,9 +9,10 @@ En hensigtsmæssig grundlæggende læserækkefølge vil derfor være:
 1. **Hjem**
 2. **Fundament**
 3. **Standarder og frameworks**
-4. **Proces og plan**
-5. **Operationel håndtering**
-6. **Læring og styring**
+4. **Generisk model**
+5. **Proces og plan**
+6. **Operationel håndtering**
+7. **Læring og styring**
 
 > *Denne rækkefølge understøtter en progression fra viden og forståelse mod anvendelse, analyse og refleksion.*
 
@@ -43,3 +44,4 @@ Det er centralt at forstå, at dokumentation ikke alene er relevant efter hænde
 
 En hændelse er ikke nødvendigvis afsluttet, blot fordi systemer er genetableret. Recovery må følges af vurdering af rest-risici, evaluering af hændelsesforløbet, opdatering af kontroller og organisatorisk læring. Dette perspektiv er væsentligt, fordi det understreger forskellen mellem kortsigtet problemløsning og langsigtet sikkerhedsforbedring.
 
+---

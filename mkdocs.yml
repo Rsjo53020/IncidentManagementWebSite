@@ -114,7 +114,7 @@ nav:
       - ISO og NIST i samspil: 03-Frameworks/iso_and_nist.md
       - NIST CSF 2.0: 03-Frameworks/csf20.md
       - ISO 22320: 03-Frameworks/iso22320.md
-  - Generisk incident management-plan:
+  - Generisk model:
       - instruktion til den generiske incident management plan: 04-GenericPlan/process.md
       - Generisk incident management-plan: 04-GenericPlan/generic_plan.md
       - Tjekliste for incident management-plan: 04-GenericPlan/checklist.md

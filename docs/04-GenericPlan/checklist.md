@@ -94,11 +94,17 @@ En moden incident management-kapabilitet er kendetegnet ved, at de centrale arte
 
 
 1) En incident response policy fastlægger det overordnede styringsgrundlag og sikrer ledelsesmæssig forankring. Denne policy er operationaliseret gennem en incident management-plan, som beskriver den konkrete proces, roller, ansvar og beslutningspunkter på tværs af organisationen.
+
 2) Planen understøttes af playbooks for specifikke scenarier, såsom ransomware, phishing eller datalæk, der gør det muligt for incident response teamet at reagere hurtigt og konsistent uden at skulle opfinde processen under pres.
-3) En klassifikations- og severity-model anvendes konsekvent i både detektion, triage og rapportering, hvilket sikrer fælles forståelse af hændelsers alvor og korrekt prioritering på tværs af tekniske og forretningsmæssige interessenter.
+
+3) En klassifikations- og alvorligheds-skala anvendes konsekvent i både detektion, triage og rapportering, hvilket sikrer fælles forståelse af hændelsers alvor og korrekt prioritering på tværs af tekniske og forretningsmæssige interessenter.
+
 4) Kommunikations- og eskalationsplanen sikrer, at relevante interessenter – herunder ledelse, juridisk, kommunikation og eksterne parter – inddrages rettidigt og koordineret, afhængigt af hændelsens karakter og impact.
+
 5) Evidens- og loghåndteringsprocedurer er implementeret i de tekniske platforme og sikrer, at data indsamles, bevares og kan anvendes til både analyse, forensics og eventuel juridisk dokumentation.
+
 6) Alle hændelser dokumenteres ved brug af en standardiseret incident report-skabelon, som sikrer ensartet rapportering af hændelsesforløb, beslutninger og handlinger.
+
 7) Afslutningsvis anvendes en struktureret lessons learned-skabelon til systematisk evaluering, hvor erfaringer omsættes til konkrete forbedringer i både kontroller, processer og organisatoriske forhold.
 
 Samlet set betyder dette, at organisationen ikke blot reagerer på hændelser, men løbende forbedrer sin evne til at forebygge, opdage og håndtere fremtidige hændelser på et højere modenhedsniveau.

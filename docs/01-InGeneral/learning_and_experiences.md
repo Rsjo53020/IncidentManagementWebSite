@@ -13,3 +13,5 @@ Jeg har især lært:
 Projektet har samtidig gjort mig mere bevidst om mine egne styrker og svagheder. Jeg er stærk i analyse, refleksion og nysgerrighed, men jeg har også erfaret, at jeg kan bruge for lang tid på fordybelse og detaljer, hvilket kan påvirke tidsstyringen negativt.
 
 Samlet set har projektet styrket min faglige identitet inden for incident management og givet mig praktisk indsigt i, hvordan hændelseshåndtering fungerer i virkelige organisationer.
+
+---

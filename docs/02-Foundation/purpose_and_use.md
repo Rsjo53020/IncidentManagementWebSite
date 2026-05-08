@@ -22,3 +22,5 @@ Processen fortsætter med recovery og validering, hvor systemer bringes tilbage 
 En praktisk tommelfingerregel er, at en organisation først har en reel incident management-kapabilitet, når den entydigt kan besvare en række centrale spørgsmål. Det gælder blandt andet, hvem der har mandat til at erklære en hændelse som et incident, og hvem der ejer beslutningerne i forhold til containment og recovery. Der skal også være klarhed over, hvilke logkilder og beviser der skal bevares for at sikre korrekt dokumentation og eventuel efterfølgende analyse.
 
 Derudover skal organisationen have fastlagte kriterier for, hvornår funktioner som ledelse, jura, HR eller kommunikation skal involveres i håndteringen. Det er ligeledes afgørende, at der findes en struktureret tilgang til dokumentation af hændelsen fra start til lukning. Organisationen skal kunne redegøre for, hvordan læring omsættes til konkrete forbedringer efterfølgende, så kapabiliteten løbende styrkes.
+
+---
