@@ -1,12 +1,12 @@
-# Samlet refleksion over læringsproces og erfaringer
+# Samlet refleksion over projekforløbet
 
 Projektforløbet har givet mig en langt dybere forståelse for hændelseshåndtering som disciplin. Jeg har opnået både tekniske, organisatoriske og kommunikative erfaringer gennem arbejdet med teori, standarder og praksisobservationer.
 
 Jeg har især lært:
 
 - At hændelseshåndtering ikke kun handler om teknik, men i høj grad om koordinering, kommunikation og beslutningsprocesser.
-- At standarder som NIST CSF 2.0 og ISO/IEC 27035 fungerer bedst som støtteværktøjer og refleksionsrammer – ikke som målsætninger i sig selv. 
-- At realistisk planlægning og afgrænsning er afgørende i større projekter.
+- At standarder og frameworks som NIST CSF 2.0 og ISO/IEC 27035 primært bør anvendes som understøttende styrings- og refleksionsværktøjer, fremfor som mål i sig selv.
+- At realistisk planlægning og afgrænsning er afgørende i selvvalgt fordybelsesområde.
 - At praksiserfaring giver en anden og mere nuanceret forståelse end teori alene.
 - At jeg udvikler mig fagligt mest gennem kombinationen af praktisk erfaring, refleksion og kritisk analyse.
 

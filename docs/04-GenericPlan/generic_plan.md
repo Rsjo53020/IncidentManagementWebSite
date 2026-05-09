@@ -19,11 +19,28 @@ Organisationen skal definere en ensartet klassifikation af hændelsestyper samt 
 Endelig skal der fastsættes minimumskrav til logning, evidenshåndtering og dokumentation for at sikre sporbarhed, efterlevelse og mulighed for efterfølgende analyse.
 
 
+<div class="inline-link">
+  <a href="/incident-management/05-Proces/governance/">
+    Governance og styringsmodel →
+  </a>
+</div>
+
+---
+
 ## Fase FØR – Forberedelse
 
 Forberedelsesfasen har til formål at sikre organisatorisk og teknisk beredskab før en hændelse opstår. Der skal etableres relevante logkilder og overvågningsmekanismer, så hændelser kan opdages rettidigt.
 
 Der bør udvikles playbooks for typiske scenarier (fx ransomware, phishing, insider threats), som beskriver standardiserede responsforløb. Derudover skal organisationen gennemføre øvelser og træning for at sikre, at processer og samarbejde fungerer i praksis. Teknologisk skal der være værktøjer til ticketing, sagsstyring og kommunikation, og der skal være etableret aftaler med leverandører og eksterne parter, herunder krav til respons og samarbejde. Yderligere skal der være defineret kriterier for, hvornår en hændelse eskaleres til kriseledelse, samt hvordan ekstern kommunikation håndteres.
+
+
+<div class="inline-link">
+  <a href="/incident-management/05-Proces/preparation/">
+    Forberedelse →
+  </a>
+</div>
+
+---
 
 
 ## Fase UNDER – Detektion og registrering
@@ -40,6 +57,12 @@ Når en potentiel hændelse registreres, skal den dokumenteres systematisk. Anve
 
 Denne registrering danner grundlaget for den videre vurdering og sikrer konsistens i håndteringen.
 
+<div class="inline-link">
+  <a href="/incident-management/06-OperationalManagement/detect_report/">
+    Detektion og registrering →
+  </a>
+</div>
+
 ---
 
 ## Fase UNDER – Triage og vurdering
@@ -52,6 +75,14 @@ På baggrund af denne vurdering besluttes det, om hændelsen skal eskaleres, hvi
 
 Denne fase er central for korrekt prioritering og effektiv ressourceanvendelse.
 
+<div class="inline-link">
+  <a href="/incident-management/06-OperationalManagement/triage_assessment/">
+    Triage og vurdering →
+  </a>
+</div>
+
+---
+
 
 ## Fase UNDER – Analyse og respons
 
@@ -62,6 +93,12 @@ Incident teamet analyserer hændelsens scope, årsag og angrebsvektor samt ident
 Efterfølgende gennemføres eradication, hvor den underliggende årsag fjernes, fx ved patching, fjernelse af malware eller ændring af kompromitterede legitimationsoplysninger.
 
 Arbejdet sker i tæt koordinering med systemejere, drift og relevante forretningsenheder, og der foretages løbende vurdering af juridiske, kontraktuelle og regulatoriske krav.
+
+<div class="inline-link">
+  <a href="/incident-management/06-OperationalManagement/analysis_response/">
+    Analyse og respons →
+  </a>
+</div>
 
 ---
 
@@ -75,6 +112,13 @@ Der skal foreligge en plan for genetablering, herunder prioritering af systemer,
 
 Kommunikation til interne og eksterne interessenter skal være koordineret og baseret på et opdateret situationsbillede.
 
+<div class="inline-link">
+  <a href="/incident-management/07-LearningAndGovernance/recover/">
+    Recovery →
+  </a>
+</div>
+
+---
 
 ## Fase EFTER – Lukning og læring
 
@@ -85,5 +129,13 @@ Dette indebærer udarbejdelse af en hændelsesrapport, herunder en detaljeret ti
 Der skal identificeres konkrete forbedringstiltag, som adresserer både tekniske, organisatoriske og processuelle svagheder. Disse tiltag skal forankres med ansvarlige og deadlines.
 
 Læring fra hændelser skal aktivt anvendes til at forbedre organisationens samlede sikkerhedsniveau og incident response-kapabilitet.
+
+
+<div class="inline-link">
+  <a href="/incident-management/07-LearningAndGovernance/lessons_learned/">
+    Lukning og læring →
+  </a>
+</div>
+
 
 ---

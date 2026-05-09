@@ -1,44 +1,44 @@
-# Fagbeskrivelse og læringsmål
+# Fagelement
 
-## IT-hændelseshåndtering – 5 ECTS
+## IT-hændelseshåndtering
+
+### Indhold
+
+Faget omhandler planlægning, identifikation, vurdering, håndtering og opfølgning på IT-sikkerhedshændelser i organisationer. Der arbejdes med både tekniske, organisatoriske og forretningsmæssige perspektiver på IT-hændelseshåndtering samt samspillet mellem drift, informationssikkerhed, beredskab og governance.
+
+Den studerende opnår forståelse for centrale begreber, processer, roller og ansvarsområder inden for IT-hændelseshåndtering, herunder hvordan organisationer etablerer og vedligeholder en operationel hændelseshåndtering. Faget har fokus på håndtering af hændelser gennem hele hændelsesforløbet.
 
 
-## Fagbeskrivelse
+### Læringsmål for
 
-Faget omhandler identifikation, vurdering, håndtering og opfølgning på IT-sikkerhedshændelser i organisationer.
-
-Den studerende opnår forståelse for centrale begreber, processer og roller inden for incident management samt samspillet mellem teknik, organisation og forretning.
-
-Faget har fokus på den operationelle håndtering af hændelser, herunder registrering, klassifikation, prioritering, eskalering, afgrænsning, afhjælpning, og læring efter hændelser. Den studerende introduceres desuden til dokumentation, rapportering og anvendelse af relevante standarder, procedurer og beredskabspraksisser.
-
-## ECTS-omfang og niveau
-
-Faget har et omfang på **5 ECTS** og er placeret på **kvalifikationsramme niveau 6**. Det betyder, at den studerende skal kunne anvende faglig viden og metoder til at håndtere praksisnære og komplekse problemstillinger samt indgå selvstændigt i fagligt og tværfagligt samarbejde.
-
-## Læringsmål
-
-### Viden
+#### Viden
 Den studerende har udviklingsbaseret viden om og forståelse for:
 
-- Praksis og anvendt teori inden for IT-hændelseshåndtering
-- Organisationers arbejde med registrering, vurdering og håndtering af IT-sikkerhedshændelser
-- Metoder til klassifikation, prioritering og eskalering af hændelser
-- Dokumentation, rapportering og læring i forbindelse med sikkerhedshændelser
+- Har udviklingsbaseret viden om anvendt teori inden for hændelseshåndtering
+- Har viden om og forståelse for grundlæggende organisationers arbejde med håndtering af IT-sikkerhedshændelser
+- Kan forstå og reflektere over teorier, metoder og praksis ifht. hændelsesforløb
 
-### Færdigheder
-Den studerende kan:
+#### Færdigheder
+Den studerende:
 
-- Anvende centrale metoder og redskaber til identifikation og indledende behandling af IT-hændelser
-- Vurdere praksisnære problemstillinger i relation til IT-sikkerhedshændelser og begrunde valgte handlinger
-- Formidle hændelsesforløb og anbefalinger til fagfæller og ikke-specialister
-- Anvende relevante procedurer og standarder i forbindelse med operationel hændelseshåndtering
+- Kan anvende centrale metoder og redskaber til identifikation og indledende behandling af IT-sikkerhedshændelser
+- kan anvende frameworks og standarder til f.eks. at lave en udførlig hændelsesplan
+- Kan vurdere praksisnære problemstillinger i relation til IT-sikkerhedshændelser og begrunde valgte handlinger
+- Kan formidle praksisnære problemstillinger og løsningsmuligheder til samarbejdspartnere og brugere
+- Kan konstruere relevante procedurer og fremgangsmåder i forbindelse med operationel hændelseshåndtering
 
-### Kompetencer
-Den studerende kan:
 
-- Håndtere afgrænsede hændelseshåndteringsopgaver i praksis
-- Indgå i fagligt og tværfagligt samarbejde om håndtering og opfølgning på IT-sikkerhedshændelser
+#### Kompetencer
+Den studerende:
 
+- Kan anvende metoder og redskaber til at håndtere komplekse situationer set ud fra et IT-sikkerhedshændelser perspektiv
+- Kan håndtere afgrænsede hændelseshåndteringsopgaver i praksis
+- Kan indgå i fagligt og tværfagligt samarbejde om håndtering og opfølgning på IT-sikkerhedshændelser
+
+
+### ECTS-omfang 
+
+Fagelementet IT-hændelseshåndtering har et omfang på 5 ECTS-point.
 
 ---
 

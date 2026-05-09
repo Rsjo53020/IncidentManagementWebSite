@@ -18,7 +18,7 @@ Figuren skal derfor læses som en konceptuel model for, hvordan en organisation 
 </p>
 
 <figure class="diagram-wrapper">
-  <svg viewBox="360 10 420 720" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="360 10 420 720">
 
     <defs>
       <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5"

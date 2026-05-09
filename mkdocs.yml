@@ -15,6 +15,7 @@ extra_css:
   - stylesheets/incident-management.css
 extra_javascript:
   - javascripts/incident-management.js
+  - javascripts/refleksion-plan.js
 docs_dir: docs
 
 theme:
@@ -100,8 +101,8 @@ markdown_extensions:
 nav:
   - Hjem:
       - Startside: index.md
-      - Introduktion og læseguide: 00-Home/reading_strategy.md
-      - Læringsmål for IT-hændelseshåndtering: 00-Home/educational_goals.md
+      - Læseguide for nye brugere: 00-Home/reading_strategy.md
+      - Studieordning: 00-Home/educational_goals.md
   - Projektet generelt:
       - Indledende grov projektplanlægning: 01-InGeneral/project_plan.md
       - Faktisk projektplan: 01-InGeneral/actual_project_plan.md

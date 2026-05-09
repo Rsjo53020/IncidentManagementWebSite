@@ -33,6 +33,25 @@
   padding: .75em 1.1em;
 }
 
+.md-typeset .hero-actions .md-button--ghost {
+  background: rgba(255,255,255,0.12);
+  border: 0.5px solid rgba(255,255,255,0.3);
+  color: #fff;
+}
+.md-typeset .hero-actions .md-button--ghost:hover {
+  background: rgba(255,255,255,0.22);
+}
+
+.md-typeset .hero-eyebrow {
+  display: inline-block;
+  font-size: .75rem; font-weight: 500; letter-spacing: .07em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.15);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-bottom: .9rem;
+}
+
 .md-typeset .grid.cards > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
@@ -122,4 +141,215 @@
   margin: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.week-plan-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.week-plan-wrapper svg {
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  display: block;
+}
+
+.week-node {
+  cursor: pointer;
+}
+
+.week-node rect {
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.week-node:hover rect {
+  filter: brightness(0.95);
+}
+
+#week-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+#week-modal-overlay.active {
+  display: flex;
+}
+
+#week-modal {
+  background: #fff;
+  color: #1e293b;
+  border-radius: 18px;
+  padding: 32px 38px;
+  max-width: 720px;
+  width: 92%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+#week-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #64748b;
+}
+
+#week-modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+#week-modal-body {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+#week-modal-body ul {
+  padding-left: 20px;
+}
+
+.inline-link {
+  margin-top: 1rem;
+}
+
+.inline-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+
+  padding: .45rem .8rem;
+
+  border-radius: 999px;
+
+  font-size: .82rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  background: rgba(91,124,250,.10);
+  border: 1px solid rgba(91,124,250,.18);
+
+  color: #5b7cfa;
+
+  transition: all .2s ease;
+}
+
+.inline-link a:hover {
+  background: rgba(91,124,250,.16);
+  transform: translateY(-1px);
+}
+
+.wide-page .md-grid {
+  max-width: 1500px;
+}
+
+.wide-page .week-plan-wrapper {
+  width: 100%;
+  max-width: 1400px;
+}
+
+
+.reflection-plan-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.reflection-plan-wrapper svg {
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  display: block;
+}
+
+.wide-page .reflection-plan-wrapper {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.reflection-week-node {
+  cursor: pointer;
+}
+
+.reflection-week-node rect {
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.reflection-week-node:hover rect {
+  filter: brightness(0.94);
+}
+
+#reflection-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+#reflection-modal-overlay.active {
+  display: flex;
+}
+
+#reflection-modal {
+  background: #fff;
+  color: #1e293b;
+  border-radius: 18px;
+  padding: 32px 38px;
+  max-width: 780px;
+  max-height: 82vh;
+  overflow-y: auto;
+  width: 92%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+#reflection-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #64748b;
+}
+
+#reflection-modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+#reflection-modal-body {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+#reflection-modal-body ul {
+  padding-left: 20px;
+}
+
+.reflection-plan-wrapper {
+  text-align: center;
+}
+
+.reflection-plan-wrapper figcaption {
+  max-width: 900px;
+  margin: 1.5rem auto 0 auto;
 }

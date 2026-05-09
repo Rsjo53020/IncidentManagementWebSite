@@ -5,7 +5,7 @@
 
 ### Formål og kontekst
 
-Dette projekt har haft til formål at udvikle et struktureret og praksisnært videnssite om IT-hændelseshåndtering (incident management) med afsæt i anerkendte standarder og frameworks, herunder **NIST** og **ISO**.
+Dette projekt har haft til formål at udvikle et struktureret og praksisnært videnssite om IT-hændelseshåndtering (incident management) med afsæt i anerkendte standarder og frameworks, herunder NIST og ISO.
 
 Projektet er gennemført som et iterativt udviklingsforløb, hvor der er arbejdet systematisk med faglig fordybelse, praktisk anvendelighed og strukturering af viden til organisatorisk brug. Målet har været at skabe en løsning, der kan anvendes som:
 

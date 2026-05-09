@@ -1,207 +1,87 @@
-# Grov Projektplanlægning (Uge 7–17)
-
-## Overordnet fremgangsmåde opdelt i ugerne
+# Indledende fremgangsmåde
 
 ---
 
-## Uge 7 – Valg af emne
+<figure class="week-plan-wrapper">
+  <svg viewBox="0 0 1100 520">
 
-**Formål:** Afgrænse projektets faglige fokus
+    <text x="550" y="35" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">
+      Grov Projektplanlægning – Uge 7–17
+    </text>
 
-### Aktiviteter:
-- Identificere relevante domæner inden for valgte emne.
-- Foretage scope-afgrænsning
-- Reflektere over relevans i forhold til praksis og læringsmål
+    <text x="550" y="58" text-anchor="middle" font-size="14" font-weight="400" fill="#64748b">
+      Klikbar projektplan opdelt i uger
+    </text>
 
-### Leverancer:
-- Valg af scenarie
-- Beskrivelse af scenariet og dets relevans
-- Refleksion over valg og afgrænsning
-- Overvejelser om, hvordan scenariet kan anvendes til at illustrere centrale aspekter af emnet.
+    <g class="week-node" data-week="uge7" role="button" tabindex="0">
+      <rect x="40" y="80" width="170" height="100" rx="14" fill="#dbeafe" stroke="#2563eb"/>
+      <text x="125" y="115" text-anchor="middle" font-size="18" font-weight="700">Uge 7</text>
+      <text x="125" y="145" text-anchor="middle" font-size="13">Valg af emne</text>
+    </g>
 
----
+    <g class="week-node" data-week="uge8" role="button" tabindex="0">
+      <rect x="240" y="80" width="170" height="100" rx="14" fill="#e0e7ff" stroke="#4f46e5"/>
+      <text x="325" y="115" text-anchor="middle" font-size="18" font-weight="700">Uge 8</text>
+      <text x="325" y="145" text-anchor="middle" font-size="13">Vejledning</text>
+    </g>
 
-## Uge 8 – Vejledning og konceptualisering
+    <g class="week-node" data-week="uge9" role="button" tabindex="0">
+      <rect x="440" y="80" width="170" height="100" rx="14" fill="#dcfce7" stroke="#16a34a"/>
+      <text x="525" y="115" text-anchor="middle" font-size="18" font-weight="700">Uge 9</text>
+      <text x="525" y="145" text-anchor="middle" font-size="13">Testmiljø</text>
+    </g>
 
-**Formål:** Kvalificere projektets retning gennem sparring
+    <g class="week-node" data-week="uge10" role="button" tabindex="0">
+      <rect x="640" y="80" width="170" height="100" rx="14" fill="#fef3c7" stroke="#d97706"/>
+      <text x="725" y="115" text-anchor="middle" font-size="18" font-weight="700">Uge 10</text>
+      <text x="725" y="145" text-anchor="middle" font-size="13">Teori</text>
+    </g>
 
-### Aktiviteter:
-- Præsentere idé: "reel trussel"
-- Diskutere gennemførelse, risiko og læringsudbytte ift. valgte emne.
-- Afklare metodisk tilgang (praktisk + teoretisk)
+    <g class="week-node" data-week="uge11" role="button" tabindex="0">
+      <rect x="840" y="80" width="170" height="100" rx="14" fill="#fae8ff" stroke="#a21caf"/>
+      <text x="925" y="115" text-anchor="middle" font-size="18" font-weight="700">Uge 11</text>
+      <text x="925" y="145" text-anchor="middle" font-size="13">Website</text>
+    </g>
 
-### Leverancer:
-- Justeret projektplan efter vejledningen
-- Klarere konceptualisering af projektets fokus og metode
-- Refleksion over vejledningens input og dets betydning for projektets videre forløb
-- Overgang til omsætning af idé til konkret projekt
-- Fokus på realistisk simulation frem for ren teori
+    <g class="week-node" data-week="uge12" role="button" tabindex="0">
+      <rect x="40" y="230" width="170" height="100" rx="14" fill="#f1f5f9" stroke="#475569"/>
+      <text x="125" y="265" text-anchor="middle" font-size="18" font-weight="700">Uge 12</text>
+      <text x="125" y="295" text-anchor="middle" font-size="13">Site-vejledning</text>
+    </g>
 
----
+    <g class="week-node" data-week="uge13_14" role="button" tabindex="0">
+      <rect x="240" y="230" width="170" height="100" rx="14" fill="#ccfbf1" stroke="#0f766e"/>
+      <text x="325" y="265" text-anchor="middle" font-size="18" font-weight="700">Uge 13–14</text>
+      <text x="325" y="295" text-anchor="middle" font-size="13">Praktisk erfaring</text>
+    </g>
 
-## Uge 9 – Opsætning af mit testmiljø + indledende gennemgang af det udvalgte litteratur
+    <g class="week-node" data-week="uge15" role="button" tabindex="0">
+      <rect x="440" y="230" width="170" height="100" rx="14" fill="#ffedd5" stroke="#ea580c"/>
+      <text x="525" y="265" text-anchor="middle" font-size="18" font-weight="700">Uge 15</text>
+      <text x="525" y="295" text-anchor="middle" font-size="13">Færdiggørelse</text>
+    </g>
 
-**Formål:** Etablere sikkert eksperimentelt miljø
+    <g class="week-node" data-week="uge16" role="button" tabindex="0">
+      <rect x="640" y="230" width="170" height="100" rx="14" fill="#fee2e2" stroke="#dc2626"/>
+      <text x="725" y="265" text-anchor="middle" font-size="18" font-weight="700">Uge 16</text>
+      <text x="725" y="295" text-anchor="middle" font-size="13">Kvalitetssikring</text>
+    </g>
 
-### Aktiviteter:
-- Klargøring af det matriale setup, som skal bruges til at simulere problemstillinger i projektes emne.
-- Indledende gennemgang af relevant litteratur.
-- Identificere centrale begreber, processer og kontroller i litteraturen, som kan anvendes i projektet.
+    <g class="week-node" data-week="uge17" role="button" tabindex="0">
+      <rect x="840" y="230" width="170" height="100" rx="14" fill="#ede9fe" stroke="#7c3aed"/>
+      <text x="925" y="265" text-anchor="middle" font-size="18" font-weight="700">Uge 17</text>
+      <text x="925" y="295" text-anchor="middle" font-size="13">Aflevering</text>
+    </g>
 
-### Leverancer:
-- Dokumenteret mit testmiljø
-- Noter og refleksioner over den indledende litteraturgennemgang
-- Identificerede nøgleelementer i litteraturen, som kan anvendes i projektet
-- Refleksion over, hvordan litteraturen kan informere og støtte projektets videre udvikling
-- Fokus på at skabe et sikkert og kontrolleret miljø for eksperimenter
-- Fokus på at opbygge en solid teoretisk forståelse, som kan anvendes i det videre arbejde
-- Overvejelser om, hvordan det indledende arbejde kan danne grundlag for den videre projektudvikling
+  </svg>
+  <figcaption>Figur 1: Illustration af den indledende projektplan - diagrammet er klikbare.</figcaption>
 
----
+</figure>
 
-## Uge 10 – Teoretisk fordybelse i litteraturen
-
-**Formål:** Opbygge solid teoretisk forståelse
-
-### Aktiviteter:
-- Studere de mest relevante og centrale kilder i dybden
-- Notere nøgleindsigter, processer og kontroller
-- Reflektere over, hvordan disse elementer kan anvendes i projektet
-- Identificere eventuelle huller i litteraturen, som projektet kan adressere
-- Overveje, hvordan den teoretiske forståelse kan informere det praktiske arbejde i projektet
-- Fokus på at opbygge en dyb og nuanceret forståelse af emnet
-
-
-### Leverancer:
-- Noter og modeludkast baseret på den teoretiske fordybelse
-- Refleksion over, hvordan den teoretiske forståelse kan anvendes i projektet
-- Identificerede områder, hvor projektet kan bidrage med ny indsigt eller perspektiv
-- Overvejelser om, hvordan den teoretiske fordybelse kan informere og støtte det videre arbejde i projektet
-- Fokus på at skabe en stærk teoretisk base, som kan anvendes i det praktiske arbejde
-- Fokus på at identificere muligheder for at bidrage med ny indsigt eller perspektiv i forhold til den eksisterende litteratur
-
-### Refleksion:
-- Fokus på forståelse og anvendelse af teori
-
----
-
-## Uge 11 – Påbegyndelse af hjemmeside (GitLab Pages)
-
-**Formål:** Strukturere vidensformidling
-
-### Aktiviteter:
-- Opsætning af GitLab.io site
-- Definere informationsarkitektur og navigation
-- Implementere første sider i Markdown
-- Reflektere over, hvordan hjemmesiden kan understøtte projektets formål og læringsmål
-- Overveje, hvordan hjemmesiden kan anvendes som et værktøj til at formidle viden og indsigt om emnet på en klar og tilgængelig måde
-- Fokus på at skabe en struktureret og logisk opbygning af hjemmesiden, som understøtter brugernes forståelse og læring
-- Fokus på at formidle komplekse emner på en måde, som er let at forstå og anvende for målgruppen
-
-### Leverancer:
-- Grundstruktur af website med navigation
-- Første indholdssider i Markdown
-- Refleksion over hjemmesidens rolle i projektet og dens potentiale som formidlingsværktøj
-- Fokus på at skabe en solid og brugervenlig platform for formidling af viden og indsigt om emnet
-- Første skridt i at omsætte teoretisk forståelse til praksisnær formidling gennem hjemmesiden
-
----
-
-## Uge 12 – Vejledning om hjemmeside
-
-**Formål:** Forbedre teknisk og visuel kvalitet
-
-### Aktiviteter:
-- Sparring om:
-  - Struktur og navigation
-  - Visuel præsentation
-  - Indholdsmæssig klarhed
-  - Implementere forbedringer baseret på vejledning
-
-
-### Leverancer:
-- Reflektere over, hvordan vejledningen kan hjælpe med at forbedre hjemmesiden og dens evne til at formidle viden og indsigt om emnet
-- Overveje, hvordan de tekniske og visuelle forbedringer kan gøre hjemmesiden mere tilgængelig og brugervenlig for målgruppen
-- Fokus på at skabe en hjemmeside, som ikke kun er informativ, men også brugervenlig og visuelt tiltalende
-- Fokus på at implementere vejledningens input på en måde, som forbedrer hjemmesidens evne til at formidle viden og indsigt om emnet på en klar og effektiv måde
-
----
-
-## Uge 13 + 14 – Praktisk erfaring
-
-**Formål:** Observere real-world
-
-### Aktiviteter:
-- Deltage i mulige møder eller aktiviteter relateret til emnet i praksis
-
-
-### Leverancer:
-- Observere og notere relevante processer, beslutninger og kommunikation
-- Reflektere over, hvordan praksis stemmer overens med eller adskiller sig fra teorien og standarderne, som er blevet studeret
-- Overveje, hvordan de observerede erfaringer kan informere og forbedre projektets model og formidling
-- Fokus på at skabe en forbindelse mellem teori og praksis gennem observation og refleksion
-- Fokus på at identificere både styrker og svagheder i den observerede praksis i forhold til den teoretiske forståelse, som er blevet opbygget gennem projektet
-
----
-
-
-## Uge 15 – Færdiggørelse af hjemmeside
-
-**Formål:** Afslutte hovedprodukt
-
-### Aktiviteter:
-- Færdiggøre indhold på hjemmesiden med fokus på:
-  - Klarhed
-  - Præcision
-  - Relevans
-
-
-
-### Leverancer:
-- Implementere eventuelle sidste tekniske eller visuelle forbedringer
-- Reflektere over, hvordan det færdige produkt opfylder projektets formål og læringsmål
-- Overveje, hvordan hjemmesiden kan anvendes som et værktøj til at formidle viden og indsigt om emnet på en måde, som er både informativ og tilgængelig for målgruppen
-- Fokus på at skabe et færdigt produkt, som effektivt formidler viden og indsigt om emnet på en klar og engagerende måde
-- Fokus på at sikre, at hjemmesiden er både informativ og brugervenlig, så den kan nå og engagere målgruppen på en effektiv måde
-
-
----
-
-## Uge 16 – Kvalitetssikring
-
-**Formål:** Sikre alignment med krav
-
-### Aktiviteter:
-- Gennemgå hjemmesiden kritisk med fokus på:
-  - Faglig kvalitet
-  - Akademisk kvalitet
-  - Formidlingseffektivitet
-  - Alignment med læringsmål og projektkrav
-
-
-### Leverancer:
-- Identificere eventuelle gaps eller områder, som kan forbedres
-- Foretage nødvendige rettelser for at sikre, at hjemmesiden opfylder alle krav og læringsmål
-- Reflektere over, hvordan kvalitetssikringen har hjulpet med at forbedre hjemmesiden og sikre, at den opfylder projektets formål og læringsmål
-- Fokus på at skabe et produkt
-
----
-
-## Uge 17 – Kilder og endelig aflevering
-
-**Formål:** Akademisk færdiggørelse
-
-### Aktiviteter:
-- Tilføje kildehenvisninger (APA)
-- Finpudsning af indhold og formidling
-- Forberede endelig aflevering
-- Endelig gennemlæsning
-- udfærdig en video med en kort præsentation af projektet og dets vigtigste indsigter på 10 minutter.
-- Reflektere over hele projektforløbet, herunder læringsudbytte, udfordringer og erfaringer
-- Overveje, hvordan de erfaringer og indsigter, som er opnået gennem projektet, kan anvendes i fremtidige faglige sammenhænge eller projekter
-
-### Leverancer:
-- Færdigt website
-- Klar til aflevering
-
----
+<div id="week-modal-overlay" role="dialog" aria-modal="true">
+  <div id="week-modal">
+    <button id="week-modal-close" aria-label="Luk">✕</button>
+    <div id="week-modal-title"></div>
+    <div id="week-modal-body"></div>
+  </div>
+</div>

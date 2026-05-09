@@ -1,20 +1,24 @@
-
 <div class="hero">
-  <h1>Incident Management</h1>
-  <p class="tagline">Et videnssite om governance, processer, operationel håndtering og læring ved sikkerhedshændelser</p>
+  <span class="hero-eyebrow">
+    🛡 Incident Management
+  </span>
+  <h1>Fra hændelse til læring</h1>
+  <p class="tagline">Et videnssite om hvordan organisationer opdager, håndterer og lærer af sikkerhedshændelser</p>
   <div class="hero-actions">
-    <a class="md-button md-button--primary" href="/incident-management/03-Proces/generisk-plan/">Se den generiske plan</a>
-    <a class="md-button md-button--primary" href="/incident-management/02-Frameworks/iso-og-nist/">Udforsk ISO og NIST</a>
+    <a class="md-button md-button--ghost" href="/incident-management/01-InGeneral/project_plan/">Projektplanlægning</a>
+    <a class="md-button md-button--ghost" href="/incident-management/02-Foundation/purpose_and_use/">Projektets formål</a>
+    <a class="md-button md-button--ghost" href="/incident-management/03-Frameworks/iso_and_nist/">ISO og NIST</a>
+    <a class="md-button md-button--ghost" href="/incident-management/04-GenericPlan/generic_plan/">Den generiske plan</a>
   </div>
 </div>
 
-# Anvendelses- og læseguide
+---
+
+# Incident Management Web Site
 
 ## Indledning
 
-Denne hjemmeside er udarbejdet som et samlet videns- og læringssite om hændelseshåndtering (Incident Management) med fokus på informationssikkerhed i organisationer. Sitet er opbygget med udgangspunkt i anerkendte standarder, frameworks og faglige kilder, herunder særligt **NIST** og **ISO**, og har til formål at præsentere en generisk, struktureret og praksisnær forståelse af, hvordan sikkerhedshændelser kan forebygges, identificeres, analyseres, håndteres, dokumenteres og efterbehandles.
-
-Formålet med denne læseguide er at støtte brugere i, hvordan siden med fordel kan anvendes, læses og forstås, afhængigt af deres faglige udgangspunkt og formål med brugen.
+Denne hjemmeside er udarbejdet som et samlet videns- og læringssite om hændelseshåndtering (Incident Management) med fokus på informationssikkerhed i organisationer. Sitet er opbygget med udgangspunkt i anerkendte standarder, frameworks og faglige kilder, herunder særligt NIST og ISO. Den har til formål at præsentere en generisk, struktureret og praksisnær forståelse af, hvordan sikkerhedshændelser kan forebygges, identificeres, analyseres, håndteres, dokumenteres og efterbehandles.
 
 ---
 
@@ -28,7 +32,7 @@ Det overordnede formål med hjemmesiden er at formidle viden om incident managem
 - Praksisorienteret anvendelse
 - Refleksion over modenhed, ansvar og forbedring
 
-Siden forsøger dermed at understøtte en forståelse af incident management som en **tværgående disciplin**, hvor tekniske, organisatoriske og ledelsesmæssige forhold spiller sammen. Hændelseshåndtering fremstilles således ikke alene som en operativ eller teknisk proces, men som et område, der også vedrører beslutningskompetence, rollefordeling, risikostyring, dokumentation, kommunikation og organisatorisk læring.
+Siden forsøger dermed at understøtte en forståelse af incident management som en tværgående disciplin, hvor tekniske, organisatoriske og ledelsesmæssige forhold spiller sammen. Hændelseshåndtering fremstilles således ikke alene som en operativ eller teknisk proces, men som et område, der også vedrører beslutningskompetence, rollefordeling, risikostyring, dokumentation, kommunikation og organisatorisk læring.
 
 ---
 
@@ -60,12 +64,12 @@ Denne del er vigtig, fordi den viser, at incident management ikke bør forstås 
 
 En anden central sektion på hjemmesiden er beskrivelsen af den generiske incident management-proces. Den er opdelt i 3 faser - FØR, UNDER og EFTER. Hvert fase indeholder under emner, der tilsammen udgør den generiske incident management-plan. Herunder gennemgås nogle af emnerne, der hører til de 3 faser:
 
-#### FØR
-- Styringsgrundlag 
+#### FØR - Proces og plan
+- Styringsgrundlag
 - Governance
 - Forberedelse
 
-#### UNDER
+#### UNDER - Operationel håndtering
 - Detektion
 - Registrering
 - Triage
@@ -73,18 +77,18 @@ En anden central sektion på hjemmesiden er beskrivelsen af den generiske incide
 - Analyse
 - Respons
 
-#### EFTER
+#### EFTER - Læring og styring
 - Recovery
 - Lukning
 - Læring
 
-Denne del kan betragtes som hjemmesidens processuelle kerne. Den skaber overblik over, hvordan hændelseshåndtering kan beskrives som et struktureret forløb, samtidig med at den giver anledning til refleksion over, hvorvidt sådanne modeller i praksis sjældent forløber lineært. Den giver dermed både et normativt og et analytisk udgangspunkt.
+Denne del kan betragtes som hjemmesidens processuelle kerne. Den skaber overblik over, hvordan hændelseshåndtering kan beskrives som et struktureret forløb, samtidig med at den giver anledning til refleksion over, hvorvidt sådanne modeller i praksis sjældent forløber lineært.
 
-### Roller, ansvar og organisatorisk koordinering
+#### Før fasen
 
 Hjemmesiden indeholder også en sektion, der fokuserer på de organisatoriske dimensioner af incident management. Her behandles rollefordeling, ansvarsplacering og samspillet mellem forskellige aktører. Denne del er væsentlig, fordi en stor del af udfordringerne i hændelseshåndtering ikke alene opstår som følge af tekniske problemer, men i lige så høj grad som følge af uklarhed om beslutningskompetence, eskaleringsveje, kommunikationsansvar og koordinering.
 
-### Dokumentation, evidens og læring
+#### Efter fasen
 
 Denne sektion tydeliggør, at hændelseshåndtering ikke slutter ved genoprettelse af drift, men også omfatter efterfølgende analyse, evaluering og forbedring. Hvilket er særligt relevant i et modenhedsperspektiv, idet den understreger, at en professionel incident management-praksis forudsætter, at organisationen kan lære af hændelser og omsætte erfaringer til ændringer i procedurer, kontroller og organisatorisk adfærd.
 
@@ -92,9 +96,8 @@ Denne sektion tydeliggør, at hændelseshåndtering ikke slutter ved genoprettel
 
 ## Konklusion
 
-Denne hjemmeside bør læses som et samlet akademisk og praksisnært videnssite om incident management. Dens styrke ligger i, at den kombinerer teoretisk fundament, frameworks, procesforståelse, organisatoriske perspektiver og refleksion over anvendelse.
-
-For nye brugere anbefales det at begynde med de introducerende og begrebsafklarende sider og herefter bevæge sig mod de mere processuelle, organisatoriske og refleksive dele. Herved skabes en progression, hvor læseren først opbygger forståelse og derefter udvikler evne til at anvende, analysere og vurdere indholdet.
+Denne hjemmeside bør læses som et samlet videnssite om incident management. Dens styrke ligger i, at den kombinerer teoretisk fundament, procesforståelse, organisatoriske perspektiver og refleksion over anvendelse.
 
 Siden er mest værdifuld, når den anvendes aktivt: ikke blot som opslagsværk, men som grundlag for faglig fordybelse, sammenligning, kritisk refleksion og kobling mellem teori og praksis. På den måde understøtter hjemmesiden ikke alene viden om, hvad incident management er, men også indsigt i, hvordan hændelseshåndtering kan forstås, vurderes og omsættes i organisatorisk virkelighed.
 
+---
