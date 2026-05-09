@@ -8,7 +8,7 @@ I nedenstående figur, som illustrerer, hvordan de forskellige frameworks kan un
 
 <figure style="text-align: center;">
   <img src="../assets/Arkitekturdiagram.png" style="max-width: 600px; width: 100%;">
-  <figcaption><em>Figur 1: Et muligt samspil mellem NIST & ISO til incident management. Konstrueret i draw.io.</em></figcaption>
+  <figcaption><em>Figur 3: Et muligt samspil mellem NIST & ISO til incident management. Konstrueret i draw.io.</em></figcaption>
 </figure>
 
 
@@ -18,6 +18,9 @@ ISO/IEC 27035-serien udgør dermed fundamentet for den procesmæssige tilgang ti
 
 NIST tilfører yderligere værdi ved at koble incident management til en bredere kontekst af risikostyring og governance gennem CSF 2.0, hvor funktionerne Govern, Identify, Protect, Detect, Respond og Recover sikrer en helhedsorienteret tilgang til cybersikkerhed. Samtidig muliggør NIST en konkret operationalisering gennem både procesbeskrivelser og kontroller, hvilket gør det lettere at omsætte strategiske mål til praktisk handling. Dette skaber en stærk kobling mellem organisationens sikkerhedsstrategi og den daglige drift, hvor incident response ikke blot bliver en reaktiv disciplin, men en integreret del af den samlede sikkerhedsarkitektur.
 
-Når ISO og NIST anvendes i samspil, opnår organisationen en robust og skalerbar tilgang til incident management, hvor der etableres en klar struktur for processer, roller og ansvar, samtidig med at der sikres fleksibilitet i implementeringen. Kombinationen understøtter både compliance og audit, styrker koordineringen på tværs af organisationen og skaber en tæt sammenhæng mellem tekniske aktiviteter og forretningsmæssige behov. Yderligere giver den et solidt fundament for løbende læring og forbedring, hvilket er afgørende i et trusselslandskab, der konstant udvikler sig.
+Når ISO og NIST anvendes i samspil, kan organisationen opnå en robust og skalerbar tilgang til incident management, hvor der etableres en klar struktur for processer, roller og ansvar, samtidig med at der sikres fleksibilitet i implementeringen. Kombinationen understøtter både compliance og audit, styrker koordineringen på tværs af organisationen og skaber en tæt sammenhæng mellem tekniske aktiviteter og forretningsmæssige behov. Yderligere giver den et solidt fundament for løbende læring og forbedring, hvilket er afgørende i et trusselslandskab, der konstant udvikler sig.
 
 Samlet set bør ISO og NIST ikke betragtes som alternative tilgange, men som komplementære elementer i en moden incident management praksis. ISO skaber struktur og proces, NIST understøtter operationalisering og risikostyring, mens ISO 22320 sikrer, at håndteringen kan løftes til et organisatorisk og strategisk niveau ved komplekse hændelser. Tilsammen danner de en helhedsorienteret tilgang, der spænder fra governance til operativ håndtering og organisatorisk robusthed.
+
+---
+

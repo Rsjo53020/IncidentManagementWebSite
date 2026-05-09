@@ -2,7 +2,7 @@
 
 ## Hvorfor incident management?
 
-Ingen organisation kan undgå alle sikkerhedshændelser. Derfor er målet ikke kun forebyggelse, men også **resiliens** - evnen til at opdage hændelser tidligt, begrænse skadevirkninger, genoprette drift og omsætte erfaringer til forbedringer. Incident management er den disciplin, der operationaliserer denne resiliens.
+Ingen organisation kan undgå alle sikkerhedshændelser. Derfor er målet ikke kun forebyggelse, men også resiliens, hvor evnen til at opdage hændelser tidligt, begrænse skadevirkninger, genoprette drift og omsætte erfaringer til forbedringer. Incident management er den disciplin, der operationaliserer denne resiliens.
 
 ## Hvad skal en generisk model kunne?
 
