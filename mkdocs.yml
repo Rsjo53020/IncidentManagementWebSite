@@ -1,6 +1,6 @@
 site_name: Incident Management
 site_description: Professionelt videnssite om incident management baseret på ISO, NIST og læringsmål for IT-hændelseshåndtering
-site_url: https://example.org/incident-management
+site_url: https://rsjo53020.github.io/IncidentManagementWebSite/
 repo_name: Rsjo53020/IncidentManagementWebSite
 repo_url: https://github.com/Rsjo53020/IncidentManagementWebSite
 
@@ -16,6 +16,7 @@ extra_css:
 extra_javascript:
   - javascripts/incident-management.js
   - javascripts/refleksion-plan.js
+  - javascripts/checklist.js
 docs_dir: docs
 
 theme:
@@ -116,9 +117,9 @@ nav:
       - NIST CSF 2.0: 03-Frameworks/csf20.md
       - ISO 22320: 03-Frameworks/iso22320.md
   - Generisk model:
-      - instruktion til den generiske incident management plan: 04-GenericPlan/process.md
-      - Generisk incident management-plan: 04-GenericPlan/generic_plan.md
-      - Tjekliste for incident management-plan: 04-GenericPlan/checklist.md
+      - Konstruktion: 04-GenericPlan/process.md
+      - Generisk incident management model: 04-GenericPlan/generic_plan.md
+      - Tjekliste for incident management model: 04-GenericPlan/checklist.md
   - Proces og plan:
       - FØR Styringsgrundlag og governance: 05-Proces/governance.md
       - FØR forberedelsesfase: 05-Proces/preparation.md

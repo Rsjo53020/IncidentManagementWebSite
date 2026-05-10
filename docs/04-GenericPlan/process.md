@@ -1,9 +1,9 @@
-# Proces til den generiske Incident Management-plan
+# Konstruktion af den generiske Incident Management model
 
 
-Den generiske Incident Management-plan er opbygget som en samlet kapabilitet, hvor governance, proces, operationel respons og kontroller hænger sammen. Formålet er ikke kun at beskrive, hvordan en organisation reagerer på en sikkerhedshændelse, men også hvordan organisationen forbereder sig, koordinerer indsatsen, dokumenterer beslutninger og lærer af hændelsen efterfølgende.
+Den generiske Incident Management model er opbygget som en samlet kapabilitet, hvor governance, proces, operationel respons og kontroller hænger sammen. Formålet er ikke kun at beskrive, hvordan en organisation reagerer på en sikkerhedshændelse, men også hvordan organisationen forbereder sig, koordinerer indsatsen, dokumenterer beslutninger og lærer af hændelsen efterfølgende.
 
-Planen tager udgangspunkt i et samspil mellem ISO- og NIST-standarder. ISO-standarderne bidrager primært med struktur, proces, roller, ansvar og koordinering, mens NIST bidrager med risikostyring, operationelle anbefalinger og konkrete sikkerhedskontroller. Tilsammen giver standarderne et praktisk grundlag for at etablere en robust incident management-kapabilitet, der kan anvendes på tværs af organisationer, teknologier og hændelsestyper.
+Modellen tager udgangspunkt i et samspil mellem ISO og NIST. ISO standarderne bidrager primært med struktur, proces, roller, ansvar og koordinering, mens NIST bidrager med risikostyring, operationelle anbefalinger og konkrete sikkerhedskontroller. Tilsammen giver standarderne et praktisk grundlag for at etablere en robust incident management-kapabilitet, der kan anvendes på tværs af organisationer, teknologier og hændelsestyper.
 
 Diagrammet nedenfor viser, hvordan de enkelte standarder placerer sig i den samlede arkitektur. Øverst ligger styrings- og koordineringslaget, hvor ISO 22320 understøtter kriseledelse, samarbejde og fælles situationsforståelse. Herefter følger ISO/IEC 27035 som proces- og ledelsesramme for hændelseshåndtering. NIST SP 800-61 understøtter den operationelle detektion og respons, mens NIST SP 800-53 omsætter kravene til konkrete kontroller, der kan implementeres, måles og forbedres.
 
@@ -14,7 +14,7 @@ Figuren skal derfor læses som en konceptuel model for, hvordan en organisation 
 ## Arkitektur: Incident Management-kapabilitet
 
 <p class="diagram-intro">
-  <strong>Klik på en standard</strong> for at læse om dens rolle i den samlede kapabilitet.
+  <strong>Klik på en standard eller framework</strong> for at læse om dens rolle i den samlede kapabilitet.
 </p>
 
 <figure class="diagram-wrapper">
@@ -28,7 +28,6 @@ Figuren skal derfor læses som en konceptuel model for, hvordan en organisation 
       </marker>
     </defs>
 
-    <!-- Layer 1 -->
     <rect x="390" y="30" width="360" height="120" rx="8"
           fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
     <text x="400" y="52" font-family="Arial" font-size="11" fill="#534AB7">
@@ -48,7 +47,6 @@ Figuren skal derfor læses som en konceptuel model for, hvordan en organisation 
       </text>
     </g>
 
-    <!-- Layer 2 -->
     <rect x="390" y="170" width="360" height="120" rx="8"
           fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
     <text x="400" y="192" font-family="Arial" font-size="11" fill="#185FA5">
@@ -68,7 +66,6 @@ Figuren skal derfor læses som en konceptuel model for, hvordan en organisation 
       </text>
     </g>
 
-    <!-- Layer 3 -->
     <rect x="390" y="310" width="360" height="120" rx="8"
           fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
     <text x="400" y="332" font-family="Arial" font-size="11" fill="#0F6E56">
@@ -88,7 +85,6 @@ Figuren skal derfor læses som en konceptuel model for, hvordan en organisation 
       </text>
     </g>
 
-    <!-- Layer 4 -->
     <rect x="390" y="450" width="360" height="120" rx="8"
           fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
     <text x="400" y="472" font-family="Arial" font-size="11" fill="#854F0B">
@@ -108,7 +104,6 @@ Figuren skal derfor læses som en konceptuel model for, hvordan en organisation 
       </text>
     </g>
 
-    <!-- Core -->
     <g class="node-box" data-info="core" role="button" tabindex="0">
       <rect x="414" y="620" width="308" height="80" rx="8"
             fill="#F1EFE8" stroke="#5F5E5A"/>
@@ -138,7 +133,7 @@ Figuren skal derfor læses som en konceptuel model for, hvordan en organisation 
 
   </svg>
 
-  <figcaption>Figur 1: Konceptuel model for incident management-kapabilitet.</figcaption>
+  <figcaption>Figur 9: Konceptuel model for incident management-kapabilitet.</figcaption>
 </figure>
 
 <div id="modal-overlay" role="dialog" aria-modal="true">

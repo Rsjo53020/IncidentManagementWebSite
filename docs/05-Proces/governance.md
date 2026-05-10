@@ -88,9 +88,8 @@ Dette understøttes typisk af:
 - Kommunikationsplaner
 - Beslutningshierarkier
 
-Et centralt element i governance-fasen er fastsættelse af krav til logning, evidenshåndtering og dokumentation. Organisationen bør definere minimumskrav for:
+Et centralt element i governance fasen er fastsættelse af krav til logning, evidenshåndtering og dokumentation. Organisationen bør definere minimumskrav for:
 
-- Systemlogning
 - Tidsstempling
 - Fastholdelse perioder af data
 - Synkronisering af tid (Network Time Protocol - NTP)

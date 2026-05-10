@@ -1,91 +1,147 @@
-# Tjekliste for en generisk incident management-plan:
+# Tjekliste for en generisk incident management-plan
 
-## Fase FØR - Styringsgrundlag + Forberedelse + Detektion og registrering
-Organisationen skal have:
+## Fase FØR  
+### Styringsgrundlag, forberedelse, detektion og registrering
 
-- en godkendt incident response policy
-- en incident management-plan med roller og ansvar
-- klassifikation af hændelsestyper og severity-niveauer
-- klare rapporteringsveje
-- kontaktlister og eskalationsmatrice
-- minimumskrav til logning, evidens og dokumentation
+??? check "Governance og styringsgrundlag"
 
-Forberedelse omfatter:
+    - [ ] Incident response policy er godkendt af ledelsen
+    - [ ] Incident management-plan er etableret og dokumenteret
+    - [ ] Roller og ansvar er defineret
+    - [ ] Severity-model og klassifikation af hændelser er fastlagt
+    - [ ] Rapporteringsveje og eskalationsmekanismer er etableret
+    - [ ] Kontaktlister og eskalationsmatrice er opdateret
+    - [ ] Minimumskrav til logning og dokumentation er defineret
+    - [ ] Krav til evidenshåndtering og sporbarhed er etableret
 
-- tekniske logkilder og overvågning
-- playbooks for typiske scenarier
-- Train-as-you-fight - øvelser og træning
-- værktøjer til ticketing, cases og kommunikation
-- aftaler med leverandører og tredjeparter
-- kriterier for kriseledelse og ekstern kommunikation
+??? check "Forberedelse"
 
-Mulige inputkilder:
+    - [ ] Relevante logkilder er identificeret og aktiveret
+    - [ ] Overvågning og alarmering er implementeret
+    - [ ] SIEM-, EDR- og øvrige sikkerhedsværktøjer er konfigureret
+    - [ ] Playbooks for typiske scenarier er udarbejdet
+    - [ ] Ticketing- og case management-system er etableret
+    - [ ] Kommunikationskanaler til incident management er defineret
+    - [ ] Leverandør- og tredjepartsaftaler er dokumenteret
+    - [ ] Kriterier for aktivering af kriseledelse er fastlagt
+    - [ ] Kommunikationsprocedure for eksterne interessenter er etableret
+    - [ ] Øvelser og træning gennemføres løbende
+    - [ ] Train-as-you-fight-princippet anvendes i øvelser
 
-- SIEM og EDR
-- brugermeldinger
-- driftsalarmer
-- sårbarhedsfund
-- tredjepartsvarsler
-- cloud-telemetri
+??? check "Mulige inputkilder til detektion"
 
-Ved registrering skal der som minimum noteres:
-- tidspunkt
-- kilde
-- berørte aktiver
-- indledende observationer
-- ansvarlig sagsbehandler
-- foreløbig severity
+    - [ ] SIEM-events
+    - [ ] EDR/XDR-detektioner
+    - [ ] Brugermeldinger
+    - [ ] Drifts- og systemalarmer
+    - [ ] Sårbarhedsfund
+    - [ ] Threat intelligence og tredjepartsvarsler
+    - [ ] Cloud- og SaaS-telemetri
+    - [ ] IDS/IPS-events
+    - [ ] Netværks- og firewall-logs
+
+??? check "Registrering af hændelser"
+
+    - [ ] Tidspunkt for registrering dokumenteres
+    - [ ] Kilde til hændelsen registreres
+    - [ ] Berørte systemer og aktiver identificeres
+    - [ ] Indledende observationer beskrives
+    - [ ] Ansvarlig sagsbehandler registreres
+    - [ ] Foreløbig severity vurderes
+    - [ ] Incident-ID oprettes
+    - [ ] Evidens sikres og journaliseres
 
 ---
 
-## Fase UNDER - Triage og vurdering + Analyse og respons
-Følgende beslutninger træffes:
+## Fase UNDER  
+### Triage, analyse og respons
 
-1. Er dette et incident eller et almindeligt driftsproblem?
-2. Hvilken type incident er der tale om?
-3. Hvilken forretningsmæssig og teknisk påvirkning ses?
-4. Skal hændelsen eskaleres?
-5. Skal beviser bevares straks?
+??? check "Triage og vurdering"
 
-Incident teamet udfører:
+    - [ ] Hændelsen er vurderet som incident eller driftsproblem
+    - [ ] Incident-type er identificeret
+    - [ ] Teknisk impact er vurderet
+    - [ ] Forretningsmæssig impact er vurderet
+    - [ ] Severity og prioritet er fastlagt
+    - [ ] Eskalationsbehov er vurderet
+    - [ ] Juridiske og regulatoriske krav er vurderet
+    - [ ] Behov for evidenssikring er vurderet
+    - [ ] Behov for ekstern involvering er vurderet
 
-- analyse af scope og årsag
-- identifikation af kompromitterede aktiver
-- containment-tiltag
-- koordinering med ejere og drift
-- vurdering af juridiske, kontraktuelle og regulatoriske forhold
+??? check "Analyse og respons"
 
-## Fase EFTER - Recovery + Lukning og læring
-Recovery må først ske kontrolleret, når organisationen har:
+    - [ ] Scope og omfang er analyseret
+    - [ ] Root cause-analyse er påbegyndt
+    - [ ] Kompromitterede aktiver er identificeret
+    - [ ] Containment-tiltag er implementeret
+    - [ ] Risiko for lateral movement er vurderet
+    - [ ] Persistence-mekanismer er undersøgt
+    - [ ] Eradication-plan er udarbejdet
+    - [ ] Koordinering med drift og systemejere er gennemført
+    - [ ] Kommunikationsspor er dokumenteret
+    - [ ] Beslutninger og handlinger logges løbende
 
-- tilstrækkelig viden om årsag og scope
-- plan for genetablering
-- validering af at kompromittering ikke fortsætter
-- aftalt kommunikation til interessenter
+---
 
-Ved afslutning skal der mindst være:
+## Fase EFTER  
+### Recovery, lukning og læring
 
-- hændelsesrapport
-- tidslinje
-- vurdering af root cause
-- vurdering af impact
-- anbefalede forbedringstiltag
-- ansvarlige og deadlines for opfølgning
+??? check "Recovery"
+
+    - [ ] Årsag og scope er tilstrækkeligt forstået
+    - [ ] Genetableringsplan er godkendt
+    - [ ] Kompromittering er verificeret stoppet
+    - [ ] Systemer er genetableret kontrolleret
+    - [ ] Recovery er valideret teknisk og forretningsmæssigt
+    - [ ] Kommunikationsplan til interessenter er gennemført
+    - [ ] Forhøjet overvågning er aktiveret efter recovery
+
+??? check "Lukning og læring"
+
+    - [ ] Hændelsesrapport er udarbejdet
+    - [ ] Tidslinje for hændelsen er dokumenteret
+    - [ ] Root cause er dokumenteret
+    - [ ] Business impact er vurderet
+    - [ ] Lessons learned-session er gennemført
+    - [ ] Forbedringstiltag er identificeret
+    - [ ] Ansvarlige for opfølgning er udpeget
+    - [ ] Deadlines for forbedringstiltag er fastsat
+    - [ ] Kontroller, processer og playbooks er opdateret
+    - [ ] Ledelsen er orienteret om læringspunkter
 
 ---
 
 ## Minimumsartefakter
 
-En moden generisk model bør have disse artefakter:
+??? check "Governance og styring"
 
-- policy
-- plan
-- playbooks
-- severity-model
-- kommunikationsplan
-- evidenslog
-- incident report-skabelon
-- lessons learned-
+    - [ ] Incident response policy
+    - [ ] Incident management-plan
+    - [ ] Roller og ansvarsmodel
+    - [ ] Severity- og klassifikationsmodel
+    - [ ] Kommunikations- og eskalationsplan
+
+??? check "Operationelle artefakter"
+
+    - [ ] Playbooks
+    - [ ] Incident register
+    - [ ] Evidenslog
+    - [ ] Incident report-skabelon
+    - [ ] Lessons learned-skabelon
+    - [ ] Kontaktlister
+    - [ ] Tidslinje-skabelon
+    - [ ] Recovery-procedure
+
+??? check "Teknisk understøttelse"
+
+    - [ ] SIEM-platform
+    - [ ] EDR/XDR-platform
+    - [ ] Ticketing- og case management-system
+    - [ ] Sikker logopbevaring
+    - [ ] Overvågning og alarmering
+    - [ ] Backup- og recovery-løsninger
+
+---
 
 ---
 ### Eksempel – Moden incident management-kapabilitet i praksis

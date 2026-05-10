@@ -75,7 +75,7 @@ function initIncidentDiagram() {
               træning og ledelsesforankring.
             </li>
             <li>
-              <strong>Del 3 — ICT-hændelsesrespons</strong>
+              <strong>Del 3 — Incident Response (ICT)-hændelsesrespons</strong>
               Går tættere på den operationelle håndtering: detektion, analyse,
               triage, inddæmning, udryddelse, genopretning og rapportering.
             </li>
@@ -91,11 +91,11 @@ function initIncidentDiagram() {
           <ul class="info-list">
             <li>
               <strong>Rapporteringskæde</strong>
-              Sikrer at hændelser bevæger sig fra frontpersonale til ledelse med tydelige eskaleringstærskler.
+              Sikrer at hændelser bevæger sig fra operationelt niveau til strategisk niveau i ledelsen med tydelige eskaleringstærskler.
             </li>
             <li>
               <strong>Tværfunktionel involvering</strong>
-              Juridisk afdeling, HR, kommunikation og ledelse får definerede roller.
+              Juridisk afdeling, Human Resources (HR), kommunikation og ledelse får definerede roller.
             </li>
             <li>
               <strong>Kontinuerlig forbedring</strong>
@@ -196,7 +196,7 @@ function initIncidentDiagram() {
             </li>
             <li>
               <strong>Fælles terminologi</strong>
-              Begreber som kritisk alarm, P1-hændelse, alvorlig hændelse og krise skal hænge sammen.
+              Begreber som kritisk alarm, alvorlig hændelse og krise skal hænge sammen.
             </li>
           </ul>
         </div>

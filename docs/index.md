@@ -5,10 +5,10 @@
   <h1>Fra hændelse til læring</h1>
   <p class="tagline">Et videnssite om hvordan organisationer opdager, håndterer og lærer af sikkerhedshændelser</p>
   <div class="hero-actions">
-    <a class="md-button md-button--ghost" href="/incident-management/01-InGeneral/project_plan/">Projektplanlægning</a>
-    <a class="md-button md-button--ghost" href="/incident-management/02-Foundation/purpose_and_use/">Projektets formål</a>
-    <a class="md-button md-button--ghost" href="/incident-management/03-Frameworks/iso_and_nist/">ISO og NIST</a>
-    <a class="md-button md-button--ghost" href="/incident-management/04-GenericPlan/generic_plan/">Den generiske plan</a>
+    <a class="md-button md-button--ghost" href="/IncidentManagementWebSite/01-InGeneral/project_plan/">Projektplanlægning</a>
+    <a class="md-button md-button--ghost" href="/IncidentManagementWebSite/02-Foundation/purpose_and_use/">Projektets formål</a>
+    <a class="md-button md-button--ghost" href="/IncidentManagementWebSite/03-Frameworks/iso_and_nist/">ISO og NIST</a>
+    <a class="md-button md-button--ghost" href="/IncidentManagementWebSite/04-GenericPlan/generic_plan/">Den generiske model</a>
   </div>
 </div>
 
