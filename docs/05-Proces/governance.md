@@ -2,7 +2,9 @@
 
 En effektiv hændelseshåndtering begynder længe før en konkret sikkerhedshændelse opstår. Organisationen skal derfor etablere et tydeligt styringsgrundlag, som sikrer, at roller, processer, ansvar og beslutningsveje er defineret og forankret organisatorisk. Uden dette fundament vil håndteringen af hændelser ofte blive præget af usikkerhed, forsinkelser og manglende koordinering.
 
-Governance-strukturen bør tage udgangspunkt i en formelt godkendt incident response policy, som er forankret hos ledelsen og koblet til organisationens overordnede risikostyring. Policyen bør beskrive:
+## Policy 
+
+Governance strukturen bør tage udgangspunkt i en formelt godkendt incident response policy, som er forankret hos ledelsen og koblet til organisationens overordnede risikostyring. Policyen bør beskrive:
 
 - Formål med incident management
 - Organisatorisk scope
@@ -11,7 +13,7 @@ Governance-strukturen bør tage udgangspunkt i en formelt godkendt incident resp
 - Krav til dokumentation og compliance
 - Sammenhæng til øvrige sikkerheds- og beredskabsprocesser
 
-Policyen fungerer som det strategiske styringsdokument og skal understøttes af en operationel incident management-plan. Planen beskriver, hvordan organisationen konkret håndterer hændelser i praksis, herunder:
+Policyen fungerer som det strategiske styringsdokument og skal understøttes af en operationel incident management plan. Planen beskriver, hvordan organisationen konkret håndterer hændelser i praksis, herunder:
 
 - Processer for identifikation, vurdering og respons
 - Roller og ansvar
@@ -20,7 +22,11 @@ Policyen fungerer som det strategiske styringsdokument og skal understøttes af 
 - Tekniske og organisatoriske afhængigheder
 - Integration med drift, SOC, beredskab og ledelse
 
-Organisationen bør samtidig etablere en tydelig organisatorisk struktur for incident management. Dette omfatter typisk:
+---
+
+## Organisatorisk struktur og roller
+
+Organisationen bør samtidig etablere en tydelig organisatorisk struktur for incident management, der afspejler de strategiske og operationelle aspekter. Dette omfatter typisk:
 
 | Rolle | Ansvar |
 |---|---|
@@ -46,6 +52,9 @@ For hver rolle bør der foreligge:
 - Krav til tilgængelighed
 - Kompetencekrav og træning
 
+---
+
+## Vagtplan og klassifikationsmodel
 
 Der skal samtidig etableres procedurer for vagtordninger og on-call beredskab, så organisationen kan reagere uden for normal arbejdstid. For at sikre ensartet håndtering skal organisationen etablere en klassifikationsmodel for hændelser. Modellen skal gøre det muligt hurtigt at vurdere hændelsens type, omfang og potentielle konsekvenser. Klassifikation kan eksempelvis baseres på:
 
@@ -73,6 +82,10 @@ Alvorlighedsskalaen skal være koblet til konkrete krav om:
 - Kommunikation
 - Dokumentationsniveau
 
+---
+
+## komandostruktur og beslutningshierarki
+
 Organisationen skal derudover etablere klare rapporteringsveje og eskalationsmekanismer. Medarbejdere skal vide:
 
 - Hvordan hændelser rapporteres
@@ -87,6 +100,10 @@ Dette understøttes typisk af:
 - Eskalationsmatricer
 - Kommunikationsplaner
 - Beslutningshierarkier
+
+---
+
+## Krav til logning, evidenshåndtering og dokumentation
 
 Et centralt element i governance fasen er fastsættelse af krav til logning, evidenshåndtering og dokumentation. Organisationen bør definere minimumskrav for:
 
@@ -115,7 +132,7 @@ Der bør samtidig etableres governance for løbende vedligeholdelse og forbedrin
 - Træning og awareness
 
 
-## Eksempel på RACI-matrix for Incident Management
+## RACI-matrix for Incident Management
 
 RACI-modellen anvendes til at tydeliggøre ansvar, beslutningskompetence og involvering under håndtering af sikkerhedshændelser. Modellen reducerer usikkerhed under kritiske situationer og sikrer, at både tekniske og forretningsmæssige aktiviteter bliver håndteret korrekt.
 
@@ -129,6 +146,8 @@ RACI-modellen anvendes til at tydeliggøre ansvar, beslutningskompetence og invo
 | I – Informed | Holdes orienteret |
 
 ---
+
+RACI-matricen bør tilpasses organisationens størrelse, modenhed og governance-struktur. I mindre organisationer vil flere roller ofte være samlet hos samme personer eller teams, mens større organisationer typisk vil have mere specialiserede funktioner og formelle eskalationsniveauer.
 
 | Aktivitet | Kriseledelse | Ledelse | Incident Manager | Legal / Compliance | HR | Eksterne partnere | SOC Analyst | Threat Hunter | IT Drift | Forensics Specialist | Kommunikations ansvarlig | CISO |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -154,7 +173,6 @@ RACI-modellen anvendes til at tydeliggøre ansvar, beslutningskompetence og invo
 
 ---
 
-RACI-matricen bør tilpasses organisationens størrelse, modenhed og governance-struktur. I mindre organisationer vil flere roller ofte være samlet hos samme personer eller teams, mens større organisationer typisk vil have mere specialiserede funktioner og formelle eskalationsniveauer.
 
 RACI-modellen bør samtidig understøttes af:
 
@@ -172,8 +190,6 @@ Formålet er at reducere tvivl og sikre hurtige beslutninger under sikkerhedshæ
 
 ## Afsluttende bemærkninger
 
-Fasen før hændelsen er derfor ikke kun administrativ forberedelse, men selve fundamentet for organisationens samlede evne til at opdage, koordinere, håndtere og lære af sikkerhedshændelser.
-
-ISO/IEC 27035-1 beskriver denne fase som etablering af en struktureret og planlagt tilgang til incident management med fokus på policy, planlægning, roller, dokumentation og læring. ISO/IEC 27035-2 uddyber kravene til planlægning, Incident Management Teams (IMT), relationer, træning og governance. NIST CSF 2.0 placerer governance som en central funktion i organisationens samlede cybersikkerhedsstyring, mens ISO 22320 understreger betydningen af entydig kommandostruktur, koordinering og fælles situationsforståelse i hændelseshåndtering.
+Fasen før hændelsen er derfor ikke kun administrativ forberedelse, men selve fundamentet for organisationens samlede evne til at opdage, koordinere, håndtere og lære af sikkerhedshændelser. Uden et solidt styringsgrundlag og en klar governance struktur vil organisationen være sårbar over for både tekniske og organisatoriske udfordringer, når en hændelse opstår. ISO/IEC 27035-1 beskriver denne fase som etablering af en struktureret og planlagt tilgang til incident management med fokus på policy, planlægning, roller, dokumentation og læring. ISO/IEC 27035-2 uddyber kravene til planlægning, Incident Management Teams (IMT), relationer, træning og governance. NIST CSF 2.0 placerer governance som en central funktion i organisationens samlede cybersikkerhedsstyring, mens ISO 22320 understreger betydningen af entydig kommandostruktur, koordinering og fælles situationsforståelse i hændelseshåndtering.
 
 ---

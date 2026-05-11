@@ -1,13 +1,12 @@
 # Analyse og respons fasen - Yderligere detaljer
 
-Analyse- og responsfasen har til formål at skabe dyb forståelse for hændelsen og gennemføre de nødvendige tekniske, organisatoriske og operationelle tiltag for at begrænse skade, stoppe angrebet og genetablere kontrol over de berørte systemer og services.
+Analyse- og responsfasen har til formål at skabe dyb forståelse for hændelsen og gennemføre de nødvendige tekniske, organisatoriske og operationelle tiltag for at begrænse skade, stoppe angrebet og genetablere kontrol over de berørte systemer og services. I denne fase bevæger organisationen sig fra den indledende triage til en mere detaljeret undersøgelse af hændelsens omfang, årsag, konsekvenser og angrebsmetoder. Samtidig iværksættes containment-, udryddelse- og koordineringsaktiviteter for at minimere påvirkningen på organisationen.
 
-I denne fase bevæger organisationen sig fra den indledende triage til en mere detaljeret undersøgelse af hændelsens omfang, årsag, konsekvenser og angrebsmetoder. Samtidig iværksættes containment-, eradication- og koordineringsaktiviteter for at minimere påvirkningen på organisationen.
+## Etablering af operationelt billede og situationsforståelse
 
 Analysefasen begynder typisk med etablering af et fælles operationelt billede, hvor alle relevante informationer samles og valideres. Formålet er at skabe situationsforståelse og sikre, at beslutninger træffes på et korrekt og opdateret grundlag.
 
 Dette omfatter blandt andet analyse af:
-
 - Kompromitterede systemer
 - Brugeraktivitet
 - Netværkskommunikation
@@ -19,10 +18,13 @@ Dette omfatter blandt andet analyse af:
 - Persistence-mekanismer
 - Exfiltration af data
 
-Organisationen skal samtidig forsøge at identificere:
+## Identifikation af angrebsmetoder og teknikker
 
+Samtidig med etablering af situationsforståelse skal organisationen forsøge at identificere de TTPer (taktik, teknik, og procedures), som trusselsaktøren har anvendt.
+
+Dette kan blandt andet omfatte:
 - Hændelsens root cause
-- Initial access vector
+- Indledende fremgangsmåde for trusselsaktøren
 - Angrebsteknikker
 - Kompromitterede legitimationsoplysninger
 - Påvirkede data
@@ -42,10 +44,12 @@ Typiske analyseaktiviteter inkluderer:
 | Threat intelligence correlation | Sammenligning med kendte trusler |
 | Malware reverse engineering | Analyse af skadevare |
 
+
+Når analyseaktiviteterne er afsluttede, kan sammenholdes op imod MITRE ATT&CK-frameworket, som giver en struktureret tilgang til at kategorisere og analysere af kendte trusselsaktørers adfærd og teknikker. Ved at kortlægge de identificerede teknikker mod ATT&CK kan organisationen få indsigt i trusselsaktørens fremgangsmåde, motivationsfaktorer og potentielle næste skridt.
+
 Analysen skal både fokusere på den tekniske kompromittering og på hændelsens potentielle forretningsmæssige konsekvenser.
 
 Dette kan eksempelvis inkludere vurdering af:
-
 - Datakompromittering
 - Tab af tilgængelighed
 - Driftsforstyrrelser
@@ -54,10 +58,9 @@ Dette kan eksempelvis inkludere vurdering af:
 - Påvirkning af kunder og samarbejdspartnere
 - Risiko for offentlig eksponering
 
-Et vigtigt element i analysefasen er identifikation af kompromitterede aktiver. Mange angreb spreder sig hurtigt på tværs af systemer og miljøer, og organisationen skal derfor løbende kortlægge angrebets scope.
+Et vigtigt element i analysefasen er identifikation af kompromitterede aktiver. Mange trusselsaktører spreder sig hurtigt på tværs af systemer og miljøer, og organisationen skal derfor løbende kortlægge angrebets scope.
 
 Dette kan omfatte:
-
 - Kompromitterede endpoints
 - Privilegerede konti
 - Cloud workloads
@@ -66,6 +69,8 @@ Dette kan omfatte:
 - Backup-systemer
 - Netværkssegmenter
 - Integrationsplatforme
+
+## Koordinering af tiltag
 
 Parallelt med analysen iværksættes containment-tiltag med det formål at begrænse skadeomfang og forhindre yderligere spredning.
 
