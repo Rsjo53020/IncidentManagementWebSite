@@ -46,6 +46,7 @@
 ## Hjemmesider
 
 - MITRE ATT&CK-frameworket (sidst tilgået 2026-05-01). [https://attack.mitre.org/](https://attack.mitre.org/)
+- UCL Bibliotekets guide til APA kildehenvisninger (sidst tilgået 2026-05-21). [https://bibliotek.ucl.dk/apa](https://bibliotek.ucl.dk/apa)
 
 ## Repo
 
