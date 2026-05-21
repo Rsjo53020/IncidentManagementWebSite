@@ -102,13 +102,13 @@ markdown_extensions:
 nav:
   - Hjem:
       - Startside: index.md
-      - Læseguide for nye brugere: 00-Home/reading_strategy.md
+      - Læseguide: 00-Home/reading_strategy.md
       - Studieordning: 00-Home/educational_goals.md
   - Projektet generelt:
-      - Indledende grov projektplanlægning: 01-InGeneral/project_plan.md
-      - Faktisk projektplan: 01-InGeneral/actual_project_plan.md
+      - Indledende projektplanlægning: 01-InGeneral/project_plan.md
+      - Endelig projektplan: 01-InGeneral/actual_project_plan.md
       - Projektets milepæle: 01-InGeneral/project_milestones.md
-      - Refleksioner over projektforløbet: 01-InGeneral/learning_and_experiences.md
+      - Samlet refleksion over  projektforløbet: 01-InGeneral/learning_and_experiences.md
   - Fundament:
       - Formål og anvendelse: 02-Foundation/purpose_and_use.md
       - Centrale begreber og definitioner: 02-Foundation/key_concepts.md

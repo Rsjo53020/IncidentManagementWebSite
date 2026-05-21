@@ -1,4 +1,4 @@
-# Indledende fremgangsmåde
+# Indledende projektplan
 
 ---
 

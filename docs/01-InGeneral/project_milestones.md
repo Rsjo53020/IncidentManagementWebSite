@@ -38,9 +38,12 @@ Denne struktur understøtter en naturlig progression fra:
 
 Der blev udviklet en generisk incident management-model, som integrerer elementer fra NIST og ISO, og som er designet til at være anvendelig i en bred vifte af organisatoriske kontekster. Modellen blev inddelt i 3 grundlæggende faser:
 
-1. **FØR** som skulle omhandle alt det, der vedrører forberedelse, forebyggelse og opbygning af kapabiliteter.
-2. **UNDER** som skulle omhandle det, der vedrører det operative forløb, herunder detektion, analyse, inddæmning og kommunikation.
-3. **EFTER** som skulle omhandle det, der vedrører efterbehandling, læring og forbedring.
+| Fase      | Indhold                                                                                                                                                                                                                        |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **FØR**   | Omfatter alle aktiviteter relateret til governance, forberedelse, forebyggelse og etablering af organisationens incident management-kapabilitet, herunder politikker, processer, roller, træning og tekniske foranstaltninger. |
+| **UNDER** | Omfatter den operationelle håndtering af hændelser, herunder detektion, registrering, triage, analyse, inddæmning, kommunikation, koordinering og respons med henblik på at begrænse påvirkning og genetablere kontrol.        |
+| **EFTER** | Omfatter recovery, evaluering, erfaringsopsamling og løbende forbedring med fokus på læring, opdatering af processer, styrkelse af kontroller og forbedring af organisationens samlede modenhed inden for incident management. |
+
 
 Dette designvalg blev truffet for at understøtte en klar og intuitiv forståelse af hændelseshåndtering som en proces, der strækker sig over tid og involverer forskellige typer aktiviteter.
 

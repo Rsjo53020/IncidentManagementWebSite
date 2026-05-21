@@ -1,28 +1,34 @@
-# Fase EFTER – Recovery
+# Recovery fasen - Yderligere detaljer
 
-Recovery-fasen har til formål at genetablere normal drift på en kontrolleret, sikker og dokumenteret måde efter en sikkerhedshændelse. Målet er ikke alene at få systemer online igen, men at sikre, at organisationen vender tilbage til en stabil og betryggende driftstilstand uden fortsat kompromittering eller skjulte trusler i miljøet.
+Recovery fasen har til formål at genetablere normal drift på en kontrolleret, sikker og dokumenteret måde efter en sikkerhedshændelse. Målet er ikke alene at få systemer online igen, men at sikre, at organisationen vender tilbage til en stabil og betryggende driftstilstand uden fortsat kompromittering eller skjulte trusler i miljøet.
 
-Recovery-fasen er tæt koblet til både containment- og eradication-faserne. Genopretning må først påbegyndes, når organisationen har tilstrækkelig forståelse af:
+## Genopretning af drift
 
-- hændelsens root cause
-- kompromitteringens omfang
-- påvirkede systemer og data
-- angriberens adgangsveje
-- eventuelle persistence-mekanismer
-- risiko for reinfektion eller gentagen kompromittering
+Recovery fasen er tæt koblet til både containment- og udryddelse-faserne. Genopretning må først påbegyndes, når organisationen har tilstrækkelig forståelse af:
 
-Organisationen skal samtidig validere, at:
+- Hændelsens root cause
+- Kompromitteringens omfang
+- Påvirkede systemer og data
+- Trusselaktørens adgangsveje
+- Eventuelle persistence-mekanismer
+- Risiko for reinfektion eller gentagen kompromittering
 
-- kompromitterede legitimationsoplysninger er udskiftet
-- malware er fjernet
-- sårbarheder er lukket
-- kompromitterede integrationer er sikret
-- sikkerhedskontroller fungerer korrekt
-- overvågning er genoprettet
+Organisationen skal samtidig validere:
 
-Recovery-fasen skal være risikobaseret og styret gennem en formaliseret genetableringsplan. Formålet med planen er at sikre kontrolleret prioritering og koordinering af genetableringen.
+- Atkompromitterede legitimationsoplysninger er udskiftet
+- At malware er fjernet
+- At sårbarheder er lukket
+- At kompromitterede integrationer er sikret
+- At sikkerhedskontroller fungerer korrekt
+- At overvågning er genoprettet
 
-En recovery-plan bør typisk omfatte:
+---
+
+## Genetableringsplan
+
+Recovery fasen skal være risikobaseret og styret gennem en formaliseret genetableringsplan. Formålet med planen er at sikre kontrolleret prioritering og koordinering af genetableringen.
+
+En recovery plan bør typisk omfatte:
 
 | Element | Formål |
 |---|---|
@@ -33,6 +39,8 @@ En recovery-plan bør typisk omfatte:
 | Kommunikationsplan | Koordinere information til interessenter |
 | Godkendelsesflow | Sikre kontrolleret genetablering |
 | Rollback-plan | Håndtering af fejl under recovery |
+
+### Prioritering og koordinering
 
 Organisationen skal identificere, hvilke systemer der er mest kritiske for forretningen, og genetableringen skal ske ud fra definerede prioriteringer.
 
@@ -49,88 +57,91 @@ Recovery kan involvere flere forskellige tekniske aktiviteter afhængigt af hæn
 
 Typiske recovery-aktiviteter inkluderer:
 
-- restore fra backups
-- geninstallation af systemer
-- genetablering af cloud workloads
-- database recovery
-- credential rotation
-- netværksre-konfiguration
-- patching og hardening
-- genaktivering af services
-- validering af sikkerhedskontroller
+- Restore fra backups
+- Geninstallation af systemer
+- Genetablering af cloud workloads
+- Database recovery
+- Credential rotation
+- Netværksre-konfiguration
+- Patching og hardening
+- Genaktivering af services
+- Validering af sikkerhedskontroller
 
-Ved ransomware-hændelser vil recovery ofte fokusere på:
+Recovery ved ransomware-hændelser vil ofte fokusere på:
 
-- verificering af backup-integritet
-- offline restore-processer
-- isoleret genetablering
-- gradvis reconnect til netværket
-- øget monitorering efter recovery
+- Verificering af backup-integritet
+- Offline restore-processer
+- Isoleret genetablering
+- Gradvis reconnect til netværket
+- Øget monitorering efter recovery
 
-Ved kompromitterede identitetsmiljøer kan recovery blandt andet omfatte:
+Recovery i kompromitterede identitetsmiljøer kan blandt andet omfatte:
 
-- reset af privilegerede konti
-- rotation af service accounts
-- re-etablering af MFA
-- gennemgang af privilegier
-- review af federations- og trustforhold
+- Reset af privilegerede konti
+- Rotation af service accounts
+- Re-etablering af MFA
+- Gennemgang af privilegier
 
+### Validering og monitorering
 En central del af recovery-fasen er validering af systemintegritet. Organisationen må ikke genetablere systemer alene baseret på antagelser om, at kompromitteringen er fjernet.
 
 Der bør gennemføres:
 
-- malware-scanning
-- integrity checks
-- vulnerability scanning
-- loganalyse
-- konfigurationsvalidering
-- sikkerhedstest
-- funktions- og performance-tests
+- Malware-scanning
+- Integritetsvalidering
+- Vulnerability scanning
+- Loganalyse
+- Konfigurationsvalidering
+- Sikkerhedstest
+- Funktionstest og performance-tests
 
 Valideringen skal sikre, at:
 
-- systemer fungerer korrekt
-- sikkerhedskontroller er aktive
-- kompromittering ikke fortsætter
-- data er komplette og korrekte
-- integrationspunkter fungerer sikkert
+- Systemer fungerer korrekt
+- Sikkerhedskontroller er aktive
+- Kompromittering ikke fortsætter
+- Data er komplette og korrekte
+- Integrationspunkter fungerer sikkert
 
 Organisationen bør samtidig overvåge miljøet intensivt efter genetablering for hurtigt at opdage tegn på:
 
-- reinfektion
-- persistence-mekanismer
-- fortsat lateral movement
-- uautoriseret aktivitet
-- fejl i recovery-processen
+- Reinfektion
+- Persistence-mekanismer
+- Fortsat lateral movement
+- Uautoriseret aktivitet
+- Fejl i recovery-processen
 
-Dette omtales ofte som enhanced monitoring eller heightened monitoring.
+Dette omtales ofte som forbedret monitoring eller forstærket monitoring.
 
 Eksempler på øget monitorering kan være:
 
-- midlertidigt skærpede SIEM-regler
-- øget EDR-overvågning
-- tættere logreview
-- hyppigere scanninger
-- manuel overvågning af kritiske systemer
+- Midlertidigt skærpede SIEM-regler
+- Øget EDR-overvågning
+- Tættere logreview
+- Hyppigere scanninger
+- Manuel overvågning af kritiske systemer
+
+### Kommunikation og dokumentation
+Kommunikation og dokumentation er også centrale elementer i recovery-fasen. Organisationen skal sikre, at alle relevante interessenter holdes opdateret om status for recovery-processen, forventede tidslinjer og eventuelle risici.
 
 Recovery-fasen kræver tæt koordinering mellem:
 
-- drift
-- sikkerhedsteams
-- systemejere
-- cloud teams
-- netværksteams
-- leverandører
-- ledelse
-- forretningsenheder
+- Drift
+- Sikkerhedsteams
+- Systemejere
+- Cloud teams
+- Netværksteams
+- Leverandører
+- Ledelse
+- Forretningsenheder
 
 Der skal løbende foretages vurderinger af:
 
-- driftsmæssig risiko
-- sikkerhedsrisiko
-- afhængigheder mellem systemer
-- påvirkning på forretningen
-- behov for midlertidige workarounds
+- Driftsmæssig risiko
+- Sikkerhedsrisiko
+- Afhængigheder mellem systemer
+- Påvirkning på forretningen
+- Behov for midlertidige workarounds
 
 Kommunikation er samtidig et centralt element i recovery-fasen. Interne og eksterne interessenter skal løbende orienteres ud fra et opdateret og valideret situationsbillede.
 
@@ -147,46 +158,48 @@ Kommunikation kan omfatte:
 
 Kommunikationen bør være:
 
-- koordineret
-- konsistent
-- faktabaseret
-- godkendt gennem etablerede processer
-- tilpasset målgruppen
+- Koordineret
+- Konsistent
+- Faktabaseret
+- Godkendt gennem etablerede processer
+- Tilpasset målgruppen
 
-Under recovery-fasen skal organisationen samtidig dokumentere alle væsentlige handlinger og beslutninger.
+Under recovery-fasen skal organisationen samtidig dokumentere alle væsentlige handlinger og beslutninger, idet dette er afgørende for både efterfølgende læring og for at kunne demonstrere, at recovery er foretaget på en kontrolleret og sikker måde.
 
 Dette omfatter blandt andet:
 
-- hvilke systemer der genetableres
-- hvornår genetablering sker
-- hvilke valideringer der er udført
-- hvilke ændringer der er implementeret
-- hvem der har godkendt genetableringen
-- hvilke risici der fortsat accepteres
+- Hvilke systemer der genetableres
+- Hvornår genetablering sker
+- Hvilke valideringer der er udført
+- Hvilke ændringer der er implementeret
+- Hvem der har godkendt genetableringen
+- Hvilke risici der fortsat accepteres
 
 Dokumentationen er vigtig for:
 
-- audit og compliance
-- regulatorisk rapportering
-- juridisk dokumentation
-- lessons learned
-- forbedring af recovery-processer
+- Audit og compliance
+- Regulatorisk rapportering
+- Juridisk dokumentation
+- Lessons learned
+- Forbedring af recovery-processer
 
-Recovery-fasen afsluttes først, når organisationen vurderer, at:
+### Afslutning af recovery
+After recovery-fasen skal organisationen foretage en samlet vurdering af, om det er sikkert og stabilt at genoptage normal drift. Dette indebærer en risikovurdering, hvor organisationen skal beslutte, om de resterende risici er acceptable, eller om yderligere foranstaltninger er nødvendige.
+Nedtrappning af øget monitorering bør også ske gradvist og baseret på løbende vurderinger af miljøet.
 
-- kritiske services er genetableret
-- kompromitteringen er fjernet
-- systemerne fungerer stabilt
-- sikkerhedskontroller er verificeret
-- normal drift kan genoptages
-- øget monitorering kan nedtrappes
+Indikatorer for, at recovery kan afsluttes, kan være:
+
+- Kritiske services er genetableret
+- Kompromitteringen er fjernet
+- Systemerne fungerer stabilt
+- Sikkerhedskontroller er verificeret
+- Normal drift kan genoptages
+- Nedtrapning af øget monitorering er mulig.
 
 ---
 
 ## Afsluttende bemærkninger
 
-Recovery er derfor ikke alene en teknisk genetableringsproces, men en kontrolleret overgang fra incident response tilbage til normal forretningsdrift med fokus på sikkerhed, stabilitet og tillid.
-
-ISO/IEC 27035-3 beskriver recovery som en struktureret proces for genetablering af drift og verificering af systemernes integritet efter containment og eradication :contentReference. ISO/IEC 27035-1 placerer recovery som en central del af organisationens samlede responsproces, mens NIST SP 800-61 understreger betydningen af kontrolleret genetablering, validering og overvågning efter større sikkerhedshændelser.
+Recovery er derfor ikke alene en teknisk genetableringsproces, men en kontrolleret overgang fra incident response tilbage til normal forretningsdrift med fokus på sikkerhed, stabilitet og tillid. ISO/IEC 27035-3 beskriver recovery som en struktureret proces for genetablering af drift og verificering af systemernes integritet efter containment og eradication. ISO/IEC 27035-1 placerer recovery som en central del af organisationens samlede responsproces, mens NIST SP 800-61 understreger betydningen af kontrolleret genetablering, validering og overvågning efter større sikkerhedshændelser.
 
 ---

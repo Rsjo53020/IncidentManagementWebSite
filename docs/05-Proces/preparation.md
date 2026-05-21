@@ -21,6 +21,7 @@ Et centralt element i forberedelsesfasen er etableringen af relevante logkilder 
 Systemlogs er essentielle for at kunne identificere tekniske fejl, stabilitetsproblemer og unormal adfærd i systemer og servere. De giver indsigt i operativsystemers tilstand og aktiviteter, og kan afsløre både tekniske problemer og sikkerhedsrelaterede hændelser. Systemlogs er ofte afgørende ved fejlfinding, stabilitetsanalyse og identifikation af unormal systemadfærd. 
 
 Eksempler kan være:
+
 - Systemgenstarter
 - Servicefejl
 - Driverproblemer
@@ -32,6 +33,7 @@ Eksempler kan være:
 Sikkerhedslogs er afgørende for at kunne identificere og analysere sikkerhedshændelser. Disse logs giver synlighed i aktiviteter, der kan indikere kompromittering, misbrug eller trusler mod organisationens informationssikkerhed. Sikkerhedslogs er ofte de første indikatorer på, at en hændelse er ved at udvikle sig, og de er derfor centrale i både detektion og triage.
 
 Eksempler inkluderer:
+
 - Failed logins
 - MFA failures
 - Ændringer i privilegier
@@ -45,6 +47,7 @@ Eksempler inkluderer:
 Applikationslogs er afgørende for at kunne identificere unormal adfærd i forretningsapplikationer og services. De giver synlighed i, hvordan applikationer interagerer med brugere, data og andre systemer, og kan afsløre både tekniske fejl og sikkerhedsrelaterede hændelser.
 
 Eksempler kan være:
+
 - API-kald
 - Databaseforespørgsler
 - Fejlmeddelelser
@@ -57,6 +60,7 @@ Eksempler kan være:
 Netværkslogs er essentielle for at kunne identificere kommunikationsmønstre, lateral movement og netværksbaserede angreb. De giver indsigt i, hvordan data bevæger sig gennem organisationens netværk og kan afsløre mistænkelig trafik, uautoriserede forbindelser eller kommunikation med kendte ondsindede IP-adresser.
 
 Typiske netværkslogs omfatter:
+
 - Firewall-events
 - Intrusion Detection and Prevention (IDS) / Intrusion Prevention System (IPS) alerts
 - Domain Name System (DNS) requests
@@ -69,6 +73,7 @@ Typiske netværkslogs omfatter:
 Performancelogs er vigtige for at kunne overvåge stabilitet, kapacitet og ydeevne i både infrastruktur og applikationer. De kan hjælpe med at identificere tekniske problemer, flaskehalse eller unormal belastning, som kan være indikatorer på en igangværende hændelse eller forløbere til en hændelse.
 
 Dette kan eksempelvis være:
+
 - CPU-udnyttelse
 - Memory usage
 - Svartider
@@ -81,6 +86,7 @@ Dette kan eksempelvis være:
 En effektiv logstrategi er derfor ikke alene en teknisk disciplin, men en central del af organisationens samlede detektions- og analysekapabilitet. Det kræver både tekniske løsninger, organisatoriske processer og løbende vedligeholdelse for at sikre, at logdata er tilgængelige, pålidelige og anvendelige i incident management-processen. ISO/IEC 27035-1 understreger vigtigheden af at etablere en logstrategi som en del af forberedelsesfasen, mens ISO/IEC 27035-2 uddyber kravene til logning, overvågning og detektion. NIST CSF 2.0 placerer logning som en central del af detektionsfunktionen, og ISO 22320 fremhæver betydningen af at have tilstrækkelig synlighed for at kunne opnå fælles situationsforståelse under hændelseshåndtering.
 
 Organisationen bør derfor definere krav til:
+
 - Hvilke logs der er kritiske
 - Central logopsamling
 - Tidsstempling og NTP-synkronisering
@@ -100,6 +106,7 @@ Logs bør som udgangspunkt centraliseres i en Security information and event man
 Overvågningsregler og alarmeringsmekanismer skal være konfigureret til at understøtte både detektion af kendte trusler og identifikation af uregelmæssigheder. Organisationen bør desuden definere overvågningsregler baseret på trusselsbilledet. 
 
 Eksempler kan være:
+
 - Flere failed logins på kort tid
 - Login fra geografisk usædvanlige lokationer
 - Privilegieeskalering
@@ -117,7 +124,7 @@ For at sikre ensartet og effektiv respons bør organisationen udvikle egne playb
 
 Typiske playbooks kan omfatte:
 
-| Scenario | Formål |
+| Scenarie | Formål |
 |---|---|
 | Ransomware | Isolation, containment og recovery |
 | Phishing | Analyse, blokering og brugerhåndtering |
@@ -129,6 +136,7 @@ Typiske playbooks kan omfatte:
 | Supply chain incident | Leverandørkoordinering |
 
 En playbook bør typisk indeholde:
+
 - Formål og scope
 - Trigger- og indgangskriterier
 - Alvorlighedsskala
@@ -145,19 +153,24 @@ En playbook bør typisk indeholde:
 
 ---
 
-### Øvelser - Train as you fight
+### Øvelser - **Train as you fight**
 
-Organisationen skal derudover gennemføre løbende træning og øvelser for at sikre, at processer og samarbejde fungerer i praksis. Øvelserne skal ligge sig så tæt op af deres virkelige. Incident management er i høj grad en organisatorisk disciplin, hvor samarbejde, kommunikation og beslutningstagning er afgørende.
+Organisationen skal derudover gennemføre løbende træning og øvelser for at sikre, at processer og samarbejde fungerer i praksis. Øvelserne skal være så virkelighedsnær som muligt, og altid træne worst-case scenario, hvilket gør at man er klædt bedst muligt på til at håndtere en hændelse, når den opstår. Incident management er i høj grad en organisatorisk disciplin, hvor samarbejde, kommunikation og beslutningstagning er afgørende.
 
 Øvelser kan blandt andet omfatte:
-- Tabletop exercises
-- Tekniske simulationsøvelser
-- Ransomware-scenarier
-- Phishing-kampagner
-- Kommunikationsøvelser
-- Recovery-tests
+
+| Øvelse                          | Beskrivelse                                                                                                                                                              |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Tabletop exercises**          | Diskussionsbaserede øvelser, hvor deltagere gennemgår et realistisk hændelsesscenarie trin for trin med fokus på roller, beslutninger, koordinering og kommunikation.    |
+| **Tekniske simulationsøvelser** | Praktiske hands-on øvelser, hvor tekniske teams arbejder med simulerede angreb eller kompromitteringer i testmiljøer for at træne detektion, analyse og respons.         |
+| **Ransomware-scenarier**        | Øvelser med fokus på håndtering af ransomware-angreb, herunder isolering, beslutningstagning, recovery, kommunikation og vurdering af forretningsmæssig påvirkning.      |
+| **Phishing-kampagner**          | Simulerede phishing-angreb rettet mod medarbejdere med henblik på at teste awareness, rapporteringsadfærd og organisationens evne til at opdage social engineering.      |
+| **Kommunikationsøvelser**       | Øvelser der tester intern og ekstern kommunikation under hændelser, herunder ledelsesbriefinger, krisekommunikation, pressehåndtering og koordinering med interessenter. |
+| **Recovery-tests**              | Test af organisationens evne til at genetablere systemer, data og drift efter en hændelse, herunder backup-validering, failover og disaster recovery-procedurer.         |
+
 
 Øvelser bør evaluere:
+
 - Responstid
 - Beslutningsprocesser
 - Rolleforståelse
@@ -184,6 +197,7 @@ Teknisk forberedelse handler ikke kun om at have de rigtige værktøjer og syste
 | Case Management | Incident tracking-systemer |
 
 Værktøjerne skal understøtte:
+
 - Dokumentation af hændelser
 - Sporbarhed
 - Audit trail
@@ -199,6 +213,7 @@ Værktøjerne skal understøtte:
 Forberedelsesfasen handler også om at etablere de nødvendige relationer og aftaler med både interne og eksterne parter. Incident management er sjældent en isoleret aktivitet, og det kræver ofte samarbejde på tværs af organisationen og med eksterne interessenter for at kunne håndtere en hændelse effektivt. Dette kan omfatte alt fra tekniske teams og ledelse til leverandører, myndigheder og specialister. Organisationen bør derfor etablere klare rapporteringsveje, eskalationsmekanismer og samarbejdsaftaler, så alle ved, hvordan de skal agere under en hændelse, og hvem de skal kontakte, når en hændelse opstår.
 
 Eksterne relationer kan omfatte:
+
 - Managed Security Service Provider (MSSP)/Security Operations Center (SOC)-leverandører
 - Cloud providers
 - Internetudbydere
@@ -210,6 +225,7 @@ Eksterne relationer kan omfatte:
 - Kommunikationsbureauer
 
 Der bør være etableret:
+
 - Kontaktveje
 - Service Level Agreement (SLA)
 - Non-Disclosure Agreement (NDA)
@@ -225,6 +241,7 @@ Der bør være etableret:
 Et vigtigt element i forberedelsesfasen er etablering af kriterier for eskalering til kriseledelse. Ikke alle sikkerhedshændelser udvikler sig til en krise, men organisationen skal på forhånd definere, hvornår ledelsen involveres.
 
 Eksempler på eskalationskriterier kan være:
+
 - Kritisk driftsnedbrud
 - Kompromittering af kritiske systemer
 - Påvirkning af kunder
@@ -235,6 +252,7 @@ Eksempler på eskalationskriterier kan være:
 - Ransom demands
 
 Organisationen skal samtidig definere processer for ekstern kommunikation. Dette omfatter:
+
 - Pressehåndtering
 - Kundekommunikation
 - Myndighedsrapportering
@@ -243,6 +261,7 @@ Organisationen skal samtidig definere processer for ekstern kommunikation. Dette
 - Kommunikation på sociale medier
 
 Kommunikationsplaner bør indeholde:
+
 - Godkendelsesflow
 - Talspersoner
 - Kontaktlister
@@ -254,9 +273,10 @@ Kommunikationsplaner bør indeholde:
 
 ## Keep It Simple, Stupid (KISS)
 
-Designprincip for playbooks og procedurer i incident management. Det handler om at holde processerne så enkle og intuitive som muligt, så de kan anvendes effektivt under pres. Komplekse eller overfyldte playbooks kan føre til forvirring, fejl og forsinkelser, når det gælder. Derfor bør playbooks fokusere på de mest kritiske handlinger og beslutningspunkter, og undgå unødvendige detaljer eller komplekse flowcharts. En simpel og klar playbook øger sandsynligheden for, at den bliver fulgt korrekt, og at organisationen kan reagere hurtigt og effektivt under en hændelse.
+Designprincip for playbooks og procedurer i incident management handler om at holde processerne så enkle og intuitive som muligt, så de kan anvendes effektivt under pres. Komplekse eller overfyldte playbooks kan føre til forvirring, fejl og forsinkelser, når det gælder. Derfor bør playbooks fokusere på de mest kritiske handlinger og beslutningspunkter, og undgå unødvendige detaljer eller komplekse flowcharts. En simpel og klar playbook øger sandsynligheden for, at den bliver fulgt korrekt, og at organisationen kan reagere hurtigt og effektivt under en hændelse.
 
-Gode playbooks er:
+Gode playbooks er:  
+
 - Korte nok til at bruges under pres
 - Præcise nok til at reducere tvivl
 - Fleksible nok til at håndtere variationer
@@ -266,7 +286,6 @@ Gode playbooks er:
 
 ## Afsluttende bemærkninger
 
-Forberedelsesfasen er derfor ikke blot en administrativ opgave, men selve fundamentet for organisationens evne til at håndtere sikkerhedshændelser effektivt. Det kræver en holistisk tilgang, hvor tekniske kapabiliteter, organisatoriske processer, governance strukturer og samarbejdsaftaler fungerer integreret for at skabe en robust incident management capability. ISO/IEC 27035-2 beskriver denne fase som etableringen af organisationens samlede incident response capability med fokus på planlægning, Incident Management Teams, relationer, teknisk støtte, awareness og øvelser. ISO/IEC 27035-3 uddyber de operationelle aktiviteter omkring monitorering, detektion, triage, analyse og containment. ISO/IEC 27035-4 understreger samtidig vigtigheden af koordinering, informationsdeling og samarbejde på tværs af organisationer.
+Forberedelsesfasen er derfor ikke blot en administrativ opgave, men selve fundamentet for organisationens evne til at håndtere sikkerhedshændelser effektivt. Det kræver en holistisk tilgang, hvor tekniske kapabiliteter, organisatoriske processer, governance strukturer og samarbejdsaftaler fungerer integreret for at skabe en robust incident management kapacitet. ISO/IEC 27035-2 beskriver denne fase som etableringen af organisationens samlede incident response kapacitet med fokus på planlægning, Incident Management Teams, relationer, teknisk støtte, awareness og øvelser. ISO/IEC 27035-3 uddyber de operationelle aktiviteter omkring monitorering, detektion, triage, analyse og containment. ISO/IEC 27035-4 understreger samtidig vigtigheden af koordinering, informationsdeling og samarbejde på tværs af organisationer.
 
 ---
-

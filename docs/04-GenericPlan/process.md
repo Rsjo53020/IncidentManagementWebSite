@@ -11,7 +11,8 @@ Figuren skal derfor læses som en konceptuel model for, hvordan en organisation 
 
 ---
 
-## Arkitektur: Incident Management-kapabilitet
+## Arkitektur
+### Incident Management-kapabilitet
 
 <p class="diagram-intro">
   <strong>Klik på en standard eller framework</strong> for at læse om dens rolle i den samlede kapabilitet.

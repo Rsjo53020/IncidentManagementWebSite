@@ -149,6 +149,8 @@ RACI-modellen anvendes til at tydeliggøre ansvar, beslutningskompetence og invo
 
 RACI-matricen bør tilpasses organisationens størrelse, modenhed og governance-struktur. I mindre organisationer vil flere roller ofte være samlet hos samme personer eller teams, mens større organisationer typisk vil have mere specialiserede funktioner og formelle eskalationsniveauer.
 
+Her er et eksempel på en RACI-matrix for centrale aktiviteter i incident management:
+
 | Aktivitet | Kriseledelse | Ledelse | Incident Manager | Legal / Compliance | HR | Eksterne partnere | SOC Analyst | Threat Hunter | IT Drift | Forensics Specialist | Kommunikations ansvarlig | CISO |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Modtage og registrere hændelse | I | I | A | I | I | I | R | C | I | I | I | C |

@@ -1,12 +1,13 @@
 # Analyse og respons fasen - Yderligere detaljer
 
-Analyse- og responsfasen har til formål at skabe dyb forståelse for hændelsen og gennemføre de nødvendige tekniske, organisatoriske og operationelle tiltag for at begrænse skade, stoppe angrebet og genetablere kontrol over de berørte systemer og services. I denne fase bevæger organisationen sig fra den indledende triage til en mere detaljeret undersøgelse af hændelsens omfang, årsag, konsekvenser og angrebsmetoder. Samtidig iværksættes containment-, udryddelse- og koordineringsaktiviteter for at minimere påvirkningen på organisationen.
+Analyse og responsfasen har til formål at skabe dyb forståelse for hændelsen og gennemføre de nødvendige tekniske, organisatoriske og operationelle tiltag for at begrænse skade, stoppe angrebet og genetablere kontrol over de berørte systemer og services. I denne fase bevæger organisationen sig fra den indledende triage til en mere detaljeret undersøgelse af hændelsens omfang, årsag, konsekvenser og angrebsmetoder. Samtidig iværksættes containment-, udryddelse- og koordineringsaktiviteter for at minimere påvirkningen på organisationen.
 
 ## Etablering af operationelt billede og situationsforståelse
 
 Analysefasen begynder typisk med etablering af et fælles operationelt billede, hvor alle relevante informationer samles og valideres. Formålet er at skabe situationsforståelse og sikre, at beslutninger træffes på et korrekt og opdateret grundlag.
 
 Dette omfatter blandt andet analyse af:
+
 - Kompromitterede systemer
 - Brugeraktivitet
 - Netværkskommunikation
@@ -18,11 +19,14 @@ Dette omfatter blandt andet analyse af:
 - Persistence-mekanismer
 - Exfiltration af data
 
+---
+
 ## Identifikation af angrebsmetoder og teknikker
 
 Samtidig med etablering af situationsforståelse skal organisationen forsøge at identificere de TTPer (taktik, teknik, og procedures), som trusselsaktøren har anvendt.
 
 Dette kan blandt andet omfatte:
+
 - Hændelsens root cause
 - Indledende fremgangsmåde for trusselsaktøren
 - Angrebsteknikker
@@ -40,16 +44,17 @@ Typiske analyseaktiviteter inkluderer:
 | Disk forensics | Analyse af kompromitterede systemer |
 | Netværksanalyse | Kortlægning af kommunikation |
 | IOC-analyse | Identifikation af indikatorer |
-| Timeline reconstruction | Kortlægning af hændelsesforløb |
-| Threat intelligence correlation | Sammenligning med kendte trusler |
+| Rekonstruktion af tidsforløbet | Kortlægning af hændelsesforløb |
+| Sammenkobling af trusselsoplysninger | Sammenligning med kendte trusler |
 | Malware reverse engineering | Analyse af skadevare |
 
 
-Når analyseaktiviteterne er afsluttede, kan sammenholdes op imod MITRE ATT&CK-frameworket, som giver en struktureret tilgang til at kategorisere og analysere af kendte trusselsaktørers adfærd og teknikker. Ved at kortlægge de identificerede teknikker mod ATT&CK kan organisationen få indsigt i trusselsaktørens fremgangsmåde, motivationsfaktorer og potentielle næste skridt.
+Under analyseaktiviteten i sammenkobling af trusselsoplysninger, kan MITRE ATT&CK-frameworket anvendes, idet MITRE giver en struktureret tilgang til at kategorisere og analysere af kendte trusselsaktørers adfærd og teknikker. Kortlægning af de identificerede teknikker til ATT&CK-frameworket giver organisationen indsigt i trusselsaktørens fremgangsmåde, mulige motivation og sandsynlige næste skridt.
 
 Analysen skal både fokusere på den tekniske kompromittering og på hændelsens potentielle forretningsmæssige konsekvenser.
 
 Dette kan eksempelvis inkludere vurdering af:
+
 - Datakompromittering
 - Tab af tilgængelighed
 - Driftsforstyrrelser
@@ -61,6 +66,7 @@ Dette kan eksempelvis inkludere vurdering af:
 Et vigtigt element i analysefasen er identifikation af kompromitterede aktiver. Mange trusselsaktører spreder sig hurtigt på tværs af systemer og miljøer, og organisationen skal derfor løbende kortlægge angrebets scope.
 
 Dette kan omfatte:
+
 - Kompromitterede endpoints
 - Privilegerede konti
 - Cloud workloads
@@ -79,7 +85,7 @@ Containment kan opdeles i:
 | Type | Formål |
 |---|---|
 | Kortsigtet containment | Hurtig begrænsning af angrebet |
-| Langsigtet containment | Stabilisering indtil eradication |
+| Langsigtet containment | Stabilisering indtil udryddelse |
 
 Eksempler på containment-tiltag inkluderer:
 
@@ -100,11 +106,7 @@ Containment kræver ofte vanskelige afvejninger mellem:
 - Evidenssikring
 - Brugeroplevelse
 
-Eksempelvis kan hurtig isolation af et system begrænse angrebet, men samtidig påvirke kritiske forretningsfunktioner eller ødelægge værdifuld evidens.
-
-Organisationen bør derfor gennemføre risikobaserede vurderinger før større containment-beslutninger.
-
-Under containment-fasen er løbende kommunikation afgørende. Incident teamet skal koordinere tæt med:
+Eksempelvis kan hurtig isolation af et system begrænse angrebet, men samtidig påvirke kritiske forretningsfunktioner eller ødelægge værdifuld evidens. Organisationen bør derfor gennemføre risikobaserede vurderinger før større containment-beslutninger. Under containment-fasen er løbende kommunikation afgørende. Incident teamet skal koordinere tæt med:
 
 - Drift
 - Systemejere
@@ -123,20 +125,20 @@ Der bør etableres:
 - Fælles dashboards
 - Eskalationskanaler
 
-Når hændelsen er stabiliseret, påbegyndes eradication-fasen. Formålet med eradication er at fjerne den underliggende årsag til kompromitteringen og sikre, at angriberen ikke længere har adgang til miljøet.
+Når hændelsen er stabiliseret, påbegyndes udryddelse-fasen. Formålet med udryddelse er at fjerne den underliggende årsag til kompromitteringen og sikre, at aktøren ikke længere har adgang til miljøet.
 
-Eradication kan blandt andet omfatte:
+Udryddelse kan blandt andet omfatte:
 
 - Patching af sårbarheder
 - Fjernelse af malware
 - Geninstallation af systemer
-- Credential resets
+- Nulstilling af adgangskoder (Credential resets)
 - Rotation af certifikater og nøgler
 - Fjernelse af persistence-mekanismer
 - Lukning af kompromitterede integrationspunkter
 - Opdatering af firewall-regler
 
-Eksempler på eradication-aktiviteter:
+Eksempler på udryddelse-aktiviteter:
 
 | Aktivitet | Formål |
 |---|---|
@@ -147,10 +149,10 @@ Eksempler på eradication-aktiviteter:
 | Hardening | Reducere fremtidig risiko |
 | Access review | Verificere privilegier |
 
-Eradication må først anses som fuldført, når organisationen med rimelig sikkerhed vurderer, at:
+Udryddelse må først anses som fuldført, når organisationen med rimelig sikkerhed vurderer, at:
 
 - Kompromitteringen er fjernet
-- Angriberen ikke længere har adgang
+- Trusselaktøren ikke længere har adgang
 - Persistence-mekanismer er elimineret
 - Sårbarheder er lukket
 - Nye kompromitteringer ikke observeres
@@ -190,4 +192,6 @@ Dette er afgørende for:
 
 Analyse- og responsfasen er derfor den mest intensive del af incident management-processen, hvor tekniske analyser, operative beslutninger, koordinering og forretningsmæssige hensyn skal balanceres under tidspres og usikkerhed.
 
-ISO/IEC 27035-3 beskriver denne fase gennem processer for analyse, containment, eradication og recovery samt operationel koordinering under hændelser :contentReference. ISO/IEC 27035-1 placerer fasen som en del af “Respond”-aktiviteterne i incident management-processen, mens NIST SP 800-61 fremhæver betydningen af hurtig analyse, containment og eradication for at reducere hændelsens samlede impact.
+ISO/IEC 27035-3 beskriver denne fase gennem processer for analyse, containment, udryddelse (eradication) og recovery samt operationel koordinering under hændelser. ISO/IEC 27035-1 placerer fasen som en del af “Respond”-aktiviteterne i incident management-processen, mens NIST SP 800-61 fremhæver betydningen af hurtig analyse, containment og udryddelse for at reducere hændelsens samlede impact.
+
+---

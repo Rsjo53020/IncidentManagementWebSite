@@ -1,11 +1,12 @@
 # Detektion og registrering fasen - Yderligere detaljer
 
-Detektions- og registreringsfasen har til formål at identificere potentielle sikkerhedshændelser så tidligt som muligt og sikre, at relevante informationer dokumenteres systematisk og konsistent. Tidlig detektion er afgørende for at begrænse skadeomfang, reducere responstid og forbedre organisationens muligheder for containment og recovery.
+Detektion og registreringsfasen har til formål at identificere potentielle sikkerhedshændelser så tidligt som muligt og sikre, at relevante informationer dokumenteres systematisk og konsistent. Tidlig detektion er afgørende for at begrænse skadeomfang, reducere responstid og forbedre organisationens muligheder for containment og recovery.
 
 ---
 
+## Detektionskilder og mekanismer
 
-Hændelser kan identificeres gennem en lang række tekniske, organisatoriske og eksterne kilder. En moden incident management-kapabilitet baserer sig derfor ikke på én enkelt overvågningsmekanisme, men på et samlet detektionsøkosystem, hvor flere datakilder og overvågningsformer understøtter hinanden.
+Sikkerhedshændelser kan identificeres gennem en lang række tekniske, organisatoriske og eksterne kilder. En moden incident management kapabilitet baserer sig derfor ikke på en enkelt overvågningsmekanisme, men på et samlet detektionsøkosystem, hvor flere datakilder og overvågningsformer understøtter hinanden.
 
 Typiske detektionskilder inkluderer:
 
@@ -33,11 +34,15 @@ Detektionsmekanismer bør understøtte både:
 
 ---
 
-Organisationen bør samtidig definere overvågningsregler baseret på det aktuelle trusselsbillede og organisationens kritiske aktiver.
+## Organisationen nær detektion
+Detektion handler ikke kun om teknologi, men også om at skabe en kultur, hvor medarbejdere og driftspersonale er opmærksomme på sikkerhedshændelser og føler sig trygge ved at rapportere dem. Organisationen bør derfor etablere klare kanaler og procedurer for manuel rapportering af hændelser, så potentielle sikkerhedshændelser kan opdages tidligt, selv før automatiske systemer registrerer dem.
+
+
+Organisationen bør derfor definere overvågningsregler baseret på det aktuelle trusselsbillede og organisationens kritiske aktiver.
 
 Eksempler på detektionsscenarier kan være:
 
-- Flere failed logins på kort tid
+- Flere mislykkede loginforsøg på meget kort tid
 - Login fra geografisk usædvanlige lokationer
 - Privilege escalation
 - Deaktivering af sikkerhedsværktøjer
@@ -45,10 +50,9 @@ Eksempler på detektionsscenarier kan være:
 - Datamængder eksfiltreret til eksterne destinationer
 - Ændringer i kritiske systemkonfigurationer
 
-
 SIEM-platforme spiller ofte en central rolle i detektionsfasen ved at samle og korrelere logs fra forskellige systemer. SIEM-løsninger kan identificere komplekse ved hjælp af regler og automatiseret analyse, som ellers ville være vanskelige at opdage manuelt.
 
----
+### Manuel rapportering af hændelser
 
 Organisationen bør samtidig understøtte manuel rapportering af hændelser. Sikkerhedshændelser kan opdages af medarbejdere eller driftspersonale før automatiske systemer registrerer dem.
 
@@ -62,13 +66,14 @@ Der bør derfor være etableret:
 
 Brugere skal vide:
 
-- Hvad der skal rapporteres
-- Hvordan det rapporteres
-- Hvem der kontaktes
-- Hvornår noget anses som kritisk
+- **Hvad** der skal rapporteres
+- **Hvor** det skal rapporteres
+- **Hvorledes** noget anses som værende kritisk
+- **Jeg/Vi** hvem er Point of contact (POC)
 
 ---
 
+## Registrering og dokumentation
 
 Når en potentiel hændelse identificeres, skal den registreres og dokumenteres systematisk. Formålet med registreringen er at skabe et ensartet grundlag for analyse, prioritering og efterfølgende håndtering.
 
@@ -93,8 +98,7 @@ Minimumsinformation bør som udgangspunkt omfatte:
 | Hvad | Berørte systemer, services eller aktiver |
 | Hvor | Kilde til observationen |
 | Hvorledes | Indledende observationer og symptomer |
-| Jeg/Vi | Ansvarlig sagsbehandler og rapportør |
-| Severity | Foreløbig vurdering af alvorlighed |
+| Jeg/Vi | Handling på det observerede. Foreløbig vurdering af alvorlighed. Ansvarlig rapportør |
 
 Derudover vil en moden registreringsproces ofte inkludere:
 
@@ -113,15 +117,12 @@ Eksempel på registrering:
 
 | Felt | Eksempel |
 |---|---|
-| Tidspunkt | 2026-05-08 08:43 UTC |
-| Hændelsestype | Mistænkelig loginaktivitet |
-| Berørt system | Microsoft 365 / Entra ID |
-| Kilde | SIEM-alert |
-| Observation | Flere failed logins efterfulgt af succesfuld MFA |
-| Berørt bruger | finance-admin@firma.dk |
-| Foreløbig severity | Høj |
-| Ansvarlig analyst | SOC Analyst – Initial triage |
-| Eskalering | Incident Manager notificeret |
+| Når | 2026-05-08 08:43 UTC |
+| Hvad | Microsoft 365 / Entra ID  |
+| Hvor | SIEM-alert - Mistænkelig loginaktivitet |
+| Hvorledes | Flere mislykkede loginforsøg efterfulgt af succesfuld MFA på finance-admin@firma.dk.|
+| Jeg/Vi | Incident Manager notificeret, Alvorlighed = Høj. SOC Analyst – Initial triage. |
+
 
 Registreringen danner grundlaget for den videre triage og vurdering. Hvis data registreres inkonsistent eller mangelfuldt, vil det ofte medføre forsinkelser, fejlvurderinger og reduceret kvalitet i den efterfølgende håndtering.
 
@@ -141,8 +142,6 @@ Det er samtidig vigtigt, at registreringen sker hurtigt og proportionelt. Dokume
 
 ## Afsluttende bemærkninger
 
-Detektions- og registreringsfasen fungerer derfor som indgangen til hele incident management-processen. Kvaliteten af denne fase har direkte betydning for organisationens evne til hurtigt at forstå, prioritere og håndtere hændelser korrekt.
-
-ISO/IEC 27035-1 beskriver denne fase som “Detect and Report”, hvor hændelser identificeres, registreres og rapporteres systematisk som grundlag for den videre incident management-proces. ISO/IEC 27035-3 uddyber de operationelle aktiviteter omkring monitorering, detektion, notifikation og triage, herunder krav til incident notification, analyse og eskalering.
+Detektions- og registreringsfasen fungerer derfor som indgangen til hele incident management processen. Kvaliteten af denne fase har direkte betydning for organisationens evne til hurtigt at forstå, prioritere og håndtere hændelser korrekt. ISO/IEC 27035-1 beskriver denne fase som “Detect and Report”, hvor hændelser identificeres, registreres og rapporteres systematisk som grundlag for den videre incident management proces. ISO/IEC 27035-3 uddyber de operationelle aktiviteter omkring monitorering, detektion, notifikation og triage, herunder krav til incident notification, analyse og eskalering.
 
 ---

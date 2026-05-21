@@ -40,55 +40,27 @@ Siden forsøger dermed at understøtte en forståelse af incident management som
 
 Hjemmesiden er opbygget i en række tematiske sektioner, som tilsammen søger at skabe progression fra grundlæggende forståelse til mere anvendelsesorienteret og analytisk indsigt.
 
-### Introducerende og begrebsafklarende indhold
-
-De indledende sider har til formål at etablere et fælles begrebsapparat. Her introduceres incident management som fagområde, centrale definitioner og sammenhængen mellem hændelser, risici, kontroller og organisatoriske processer.
-
-Denne del er særlig vigtig for nye læsere, fordi den skaber den nødvendige forståelsesramme for det øvrige indhold. Uden denne grundlæggende begrebsafklaring vil mere operationelle eller framework-orienterede sider kunne fremstå løsrevne eller unødigt komplekse.
-
-### Standarder, frameworks og styringsmæssige perspektiver
-
-En central del af hjemmesiden omhandler de standarder og frameworks, som incident management ofte forankres i. Her behandles blandt andet forholdet mellem:
-
-
-- NIST SP 800-61 Incident Response Recommendations and Considerations for Cybersecurity Risk Management
-- NIST SP 800-53 Security and Privacy Controls for Information Systems and Organizations
-- NIST SP 800-86 Guide to Integrating Forensic Techniques into Incident Response
-- ISO 22320 - Security and resilience – Emergency management
-- ISO/IEC 27035 DEL 1-4
+| Sektion                      | Indhold                                                                                                                                                  |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hjem**                     | Startside, læseguide og studieordning                                                                                                                    |
+| **Projektet generelt**       | Indledende projektplan, Endelig projektplan, projektets milepæle samt samlet refleksion over  projektforløbet                                             |
+| **Fundament**                | Formål og anvendelse samt centrale begreber inden for incident management                                                                                |
+| **Standarder og frameworks** | ISO og NIST i samspil, NIST CSF 2.0 samt ISO 22320                                                                                                       |
+| **Generisk model**           | Konstruktion af den generiske Incident Management-model, den generiske Incident Management-model samt tjekliste for en generisk incident management-plan |
+| **Proces og plan**           | FØR-faserne med styringsgrundlag og governance samt forberedelsesfasen                                                                                   |
+| **Operationel håndtering**   | UNDER-faserne med detektion og registrering, triage og vurdering samt analyse og respons                                                                 |
+| **Læring og styring**        | EFTER-faserne med recovery samt lukning og læring                                                                                                        |
+| **Kilder**                   | Oversigt over kilder og referencer anvendt i sitet                                                                                                       |
 
 
-Denne del er vigtig, fordi den viser, at incident management ikke bør forstås som en isoleret funktion, men som en integreret del af organisationens samlede sikkerheds- og governance-arbejde. Læseren får her mulighed for at forstå, hvordan forskellige frameworks bidrager med hver deres perspektiv, eksempelvis procesforståelse, kontrolkataloger, organisatoriske krav eller forensics-understøttelse.
-
-### Den generiske proces for hændelseshåndtering
-
-En anden central sektion på hjemmesiden er beskrivelsen af den generiske incident management-proces. Den er opdelt i 3 faser - FØR, UNDER og EFTER. Hvert fase indeholder under emner, der tilsammen udgør den generiske incident management-plan. Herunder gennemgås nogle af emnerne, der hører til de 3 faser:
-
-#### FØR - Proces og plan
-- Styringsgrundlag
-- Governance
-- Forberedelse
-
-#### UNDER - Operationel håndtering
-- Detektion
-- Registrering
-- Triage
-- Vurdering
-- Analyse
-- Respons
-
-#### EFTER - Læring og styring
-- Recovery
-- Lukning
-- Læring
-
-Denne del kan betragtes som hjemmesidens processuelle kerne. Den skaber overblik over, hvordan hændelseshåndtering kan beskrives som et struktureret forløb, samtidig med at den giver anledning til refleksion over, hvorvidt sådanne modeller i praksis sjældent forløber lineært.
-
-#### Før fasen
+### Før fasen
 
 Hjemmesiden indeholder også en sektion, der fokuserer på de organisatoriske dimensioner af incident management. Her behandles rollefordeling, ansvarsplacering og samspillet mellem forskellige aktører. Denne del er væsentlig, fordi en stor del af udfordringerne i hændelseshåndtering ikke alene opstår som følge af tekniske problemer, men i lige så høj grad som følge af uklarhed om beslutningskompetence, eskaleringsveje, kommunikationsansvar og koordinering.
 
-#### Efter fasen
+### Under fasen
+Denne sektion dækker de centrale operationelle faser i hændelseshåndtering, herunder detektion og registrering, triage og vurdering samt analyse og respons. Den er vigtig, fordi den giver en detaljeret forståelse af, hvordan organisationer kan opdage og håndtere sikkerhedshændelser på en struktureret måde. Det er i denne del, at de tekniske og organisatoriske aspekter af incident management for alvor kommer til udtryk, idet det kræver både teknisk ekspertise og organisatorisk koordinering at håndtere hændelser effektivt.
+
+### Efter fasen
 
 Denne sektion tydeliggør, at hændelseshåndtering ikke slutter ved genoprettelse af drift, men også omfatter efterfølgende analyse, evaluering og forbedring. Hvilket er særligt relevant i et modenhedsperspektiv, idet den understreger, at en professionel incident management-praksis forudsætter, at organisationen kan lære af hændelser og omsætte erfaringer til ændringer i procedurer, kontroller og organisatorisk adfærd.
 

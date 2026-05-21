@@ -1,4 +1,4 @@
-# Faktiske projektplan
+# Endelig projektplan
 
 
 <figure class="reflection-plan-wrapper">

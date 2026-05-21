@@ -12,7 +12,7 @@ Den studerende opnår forståelse for centrale begreber, processer, roller og an
 ### Læringsmål for
 
 #### Viden
-Den studerende har udviklingsbaseret viden om og forståelse for:
+Den studerende:
 
 - Har udviklingsbaseret viden om anvendt teori inden for hændelseshåndtering
 - Har viden om og forståelse for grundlæggende organisationers arbejde med håndtering af IT-sikkerhedshændelser

@@ -1,6 +1,6 @@
 # Læsestrategi og faglige opmærksomhedspunkter
 
-## Anbefalet læsestrategi for nye brugere
+## Anbefalet læsestrategi
 
 Hjemmesiden kan anvendes på forskellige måder afhængigt af læserens formål. For nye brugere anbefales dog en læsestrategi, hvor forståelsen opbygges gradvist.
 

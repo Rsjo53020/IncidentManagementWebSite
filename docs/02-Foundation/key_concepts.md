@@ -1,136 +1,43 @@
-# Centrale begreber
+# Centrale Definitioner og begreber
 
-## Event, Alert og Incident
 
-En præcis begrebsafklaring er fundamental for effektiv hændelseshåndtering. Uden et fælles sprog opstår der hurtigt fejlklassifikation, forkert prioritering og ineffektiv respons.
-
-### Event  
-En **observerbar hændelse** i systemer, netværk eller processer.  
-Et event er neutralt og indikerer ikke nødvendigvis en sikkerhedstrussel.
-
-> Eksempel: Login, systemændring eller netværkstrafik
-
----
-
-### Alert  
-Et **indikatorbaseret signal**, der indikerer potentiel unormal eller mistænkelig aktivitet.  
-Alerts genereres typisk via overvågningsværktøjer (SIEM, EDR) eller korrelationsregler.
-
-> Alerts kræver altid validering – de er hypoteser, ikke fakta
-
----
-
-### Incident  
-En **bekræftet eller højt sandsynlig sikkerhedshændelse**, der kompromitterer eller truer:
-
-- Fortrolighed (Confidentiality)  
-- Integritet (Integrity)  
-- Tilgængelighed (Availability)  
-
-> Incident = når risiko bliver til reel påvirkning eller konkret trussel
-
----
-
-## Severity, Impact og Priority
-
-Disse tre dimensioner er centrale i styring og beslutningstagning – og bliver ofte fejlagtigt blandet sammen.
-
-| Begreb     | Fokus                     | Spørgsmål det besvarer |
-|------------|--------------------------|------------------------|
-| **Severity** | Teknisk alvor            | Hvor slemt er det teknisk/sikkerhedsmæssigt? |
-| **Impact**   | Forretningspåvirkning    | Hvad betyder det for forretningen? |
-| **Priority** | Respons og handling      | Hvor hurtigt skal vi reagere – og med hvilke ressourcer? |
-
-> **Vigtigt:** Priority er en funktion af *både* severity og impact – ikke en selvstændig vurdering.
+| Begreb                                                    | Definition                                                                                                                                                                  |
+| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **NIST (National Institute of Standards and Technology)** | Amerikansk føderal organisation, som udvikler standarder, vejledninger og frameworks inden for blandt andet cybersikkerhed, risikostyring og incident management.           |
+| **Cybersecurity Framework (CSF)**                         | Risikobaseret framework udviklet af NIST til styring og reduktion af cybersikkerhedsrisici gennem funktionerne Govern, Identify, Protect, Detect, Respond og Recover.       |
+| **ISO-standarder**                                        | Internationale standarder udviklet af ISO med fælles krav, principper og best practices inden for eksempelvis informationssikkerhed, kvalitet og beredskab.                 |
+| **IDS (Intrusion Detection System) / IPS (Intrusion Prevention System)**                                               | IDS opdager mistænkelig aktivitet, mens IPS både kan opdage og automatisk blokere angreb eller skadelig trafik.                                                             |
+| **ICT-hændelsesrespons (Incident Response)**              | Operationel håndtering af ICT-relaterede sikkerhedshændelser, herunder detektion, analyse, containment, eradication og recovery.                                            |
+| **NGO (Non-Governmental Organization)**                   | Ikke-statslig organisation, som kan indgå i samarbejde omkring beredskab, krisehåndtering eller cybersikkerhed.                                                             |
+| **hændelseshåndtering**                                   | Struktureret proces til identifikation, vurdering, håndtering og opfølgning på sikkerhedshændelser.                                                                         |
+| **playbooks**                                             | Dokumenterede handlingsplaner for specifikke hændelsestyper med beskrivelser af roller, handlinger og kommunikation.                                                        |
+| **Privilege escalation**                                  | Teknik hvor en trusselaktør opnår højere adgangsrettigheder end oprindeligt tildelt.                                                                                            |
+| **CERT’er**                                               | Computer Emergency Response Teams som hjælper med koordinering, analyse og håndtering af sikkerhedshændelser.                                                               |
+| **MFA**                                                   | Multi-Factor Authentication – autentifikation med mindst to forskellige sikkerhedsfaktorer.                                                                                 |
+| **DDoS (Distributed Denial of Service)**                  | DDos-angreb hvor mange systemer overbelaster en tjeneste for at gøre den utilgængelig.                                                             |
+| **IOC (Indicators of Compromise)**                        | Tekniske indikatorer som kan indikere kompromittering, fx IP-adresser, hashes eller domæner.                                                                                |
+| **Detektionsøkosystem**                                   | Samlet overvågningsmiljø hvor flere datakilder og sikkerhedsteknologier understøtter hinanden for at opdage hændelser.                                                      |
+| **API**                                                   | Application Programming Interface – mekanisme som gør det muligt for systemer at kommunikere og udveksle data.                                                              |
+| **Hændelsens root cause**                                 | Den underliggende årsag til at en hændelse kunne opstå.                                                                                                                     |
+| **containment**                                           | Inddæmning af en hændelse for at begrænse skade, spredning og påvirkning.                                                                                                   |
+| **CPU**                                                   | Computerens centrale processor som udfører instruktioner og beregninger.                                                                                                    |
+| **RAM**                                                   | Midlertidig arbejdshukommelse anvendt af systemer og programmer under drift.                                                                                                |
+| **VPN (Virtual Private Network)**                         | Krypteret forbindelse som giver sikker adgang til netværk og ressourcer over internettet.                                                                                   |
+| **DNS (Domain Name System)**                              | DNS som oversætter domænenavne til IP-adresser.                                                                                                              |
+| **ransomware**                                            | Skadelig software som krypterer data eller systemer med henblik på afpresning.                                                                                              |
+| **CISO (Chief Information Security Officer)**             | Øverste ansvarlige for informations- og cybersikkerhed.                                                                                |
+| **root cause analyse**                                    | Systematisk metode til at identificere de bagvedliggende årsager til en hændelse.                                                                                           |
+| **phishing**                                              | Social engineering-angreb hvor brugere manipuleres til at afgive credentials eller åbne skadeligt indhold.                                                                  |
+| **insider threats**                                       | Trusler fra interne personer med legitim adgang til organisationens systemer eller data.                                                                                    |
+| **incident management**                                   | Samlet paraplybetegnelse for hele livscyklussen omkring håndtering af sikkerhedshændelser, herunder registrering, analyse, containment, recovery, kommunikation og læring.  |
+| **Recovery**                                              | Fasen hvor systemer og tjenester genetableres til normal og sikker drift efter en hændelse.                                                                                 |
+| **laveste fællesnævner**                                  | Det formidlingsniveau min hjemmesiden forsøger at kommunikere til.                                                                                |
+| **trusselslandskab**                                      | Det samlede billede af aktuelle og potentielle trusler, trusselsaktører og sårbarheder.                                                                                     |
+| **resiliens**                                             | Organisationens evne til at modstå, tilpasse sig og genetablere drift efter forstyrrelser eller angreb.                                                                     |
+| **generisk**                                              | Noget som er designet til bred anvendelse på tværs af organisationstyper, teknologier og miljøer.                                                                           |
+| **modenhed**                                              | Niveauet af udvikling, integration og effektivitet i organisationens incident management-kapabilitet.                                                                      |
+| **FIT/CIA**         | Informationssikkerhedsmodel som beskriver de centrale sikkerhedsegenskaber: **Fortrolighed (Confidentiality)**, **Integritet (Integrity)** og **Tilgængelighed (Availability)**. Modellen anvendes til vurdering af sikkerhedsrisici og konsekvenser ved hændelser.                                                                                                                              |
+| **Lessons Learned** | Struktureret evaluering efter en hændelse eller øvelse med fokus på at identificere erfaringer, forbedringspunkter og nødvendige ændringer i processer, teknologi, kommunikation eller governance. Lessons Learned anvendes til løbende forbedring af organisationens incident management-kapabilitet.   |
 
 ---
 
-## Triage
-
-Triage er den **første analytiske beslutningsfase** i incident response-processen.
-
-Formålet er at skabe hurtig klarhed og sikre korrekt håndtering fra start.
-
-### Triage omfatter:
-
-- Klassifikation: *Er dette et incident eller ej?*  
-- Kategorisering: *Hvilken type hændelse er det?*  
-- Kritikalitet: *Hvor alvorligt er det?*  
-- Eskalation: *Hvem skal involveres?*  
-- Initial respons: *Hvilke handlinger skal iværksættes nu?*  
-
-> Effektiv triage reducerer responstid og begrænser skade markant
-
----
-
-## Containment, Eradication og Recovery
-
-Disse tre faser udgør kernen i den operationelle håndtering.
-
-### Containment  
-**Begrænsning af skade og spredning**
-
-Typiske tiltag:
-- Isolering af systemer  
-- Blokering af IP’er/domæner  
-- Deaktivering af konti  
-
----
-
-### Eradication  
-**Fjernelse af root cause**
-
-Typiske tiltag:
-- Fjernelse af malware  
-- Lukning af sårbarheder  
-- Fjernelse af persistence mechanisms  
-
----
-
-### Recovery  
-**Sikker genetablering af drift**
-
-Omfatter:
-- Gendannelse af systemer  
-- Validering af integritet  
-- Overvågning for reinfektion  
-
-> Recovery handler ikke kun om drift – men om **tillid til miljøet**
-
----
-
-## Lessons Learned
-
-Lessons learned er en **kontinuerlig forbedringsmekanisme**, ikke blot en afsluttende aktivitet.
-
-Formålet er at styrke organisationens samlede sikkerhedsniveau.
-
-### Fokusområder:
-
-- Teknologi (detektion, logs, tooling)  
-- Processer (playbooks, workflows)  
-- Organisation (roller, ansvar, samarbejde)  
-- Kompetencer (træning og awareness)  
-- Governance (kontroller og compliance)
-
-> Understøtter en moden risk management tilgang (NIST SP 800-53)
-
----
-
-## Evidens og Chain of Custody
-
-Ved alvorlige hændelser er korrekt håndtering af evidens afgørende – særligt ved:
-
-- Juridiske sager  
-- Interne disciplinærsager  
-- Revision og compliance  
-
-### Chain of Custody sikrer dokumentation for:
-
-- Hvem der indsamlede data  
-- Hvornår det blev gjort  
-- Hvordan integriteten er sikret  
-- Hvor data er opbevaret  
-- Hvem der har haft adgang  
-
-> Uden korrekt chain of custody kan evidens miste sin værdi

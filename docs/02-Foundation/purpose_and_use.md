@@ -17,7 +17,7 @@ På dette site anvendes incident management som en samlet paraplybetegnelse, der
 Processen fortsætter med recovery og validering, hvor systemer bringes tilbage til normal tilstand, og det sikres, at løsningerne virker som forventet. Samtidig er både intern og ekstern kommunikation en integreret del af håndteringen, ligesom dokumentation, forensics og bevisbevarelse understøtter sporbarhed og eventuel efterforskning. Yderligere omfatter incident management også læring, øvelser og modenhedsudvikling, så organisationen løbende kan forbedre sin evne til at håndtere fremtidige hændelser.
 
 
-## Praktisk tommelfingerregel
+### Praktisk tommelfingerregel
 
 En praktisk tommelfingerregel er, at en organisation først har en reel incident management-kapabilitet, når den entydigt kan besvare en række centrale spørgsmål. Det gælder blandt andet, hvem der har mandat til at erklære en hændelse som et incident, og hvem der ejer beslutningerne i forhold til containment og recovery. Der skal også være klarhed over, hvilke logkilder og beviser der skal bevares for at sikre korrekt dokumentation og eventuel efterfølgende analyse.
 
